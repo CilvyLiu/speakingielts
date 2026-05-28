@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>雅思口语·马斯克万能串题法 | 2025大陆新题+老题沿用 一人串36+话题</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background: #f5f9ff;
+            color: #0b2b42;
+            line-height: 1.5;
+            padding: 2rem 1.5rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #0b2b42, #1e5a7d, #f39c12);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            letter-spacing: -0.01em;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero .badge {
+            display: inline-block;
+            background: #e9ecef;
+            border-radius: 100px;
+            padding: 0.25rem 1.2rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #1e466e;
+            margin-bottom: 1rem;
+        }
+
+        .stats-wrapper {
+            background: linear-gradient(115deg, #0f2c3f 0%, #1b4a6e 100%);
+            border-radius: 2rem;
+            padding: 1.4rem 2rem;
+            margin-bottom: 2.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            box-shadow: 0 12px 25px -10px rgba(0,0,0,0.2);
+        }
+
+        .stat-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(8px);
+            border-radius: 1.8rem;
+            padding: 0.6rem 1.6rem;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.6rem;
+            font-weight: 800;
+            color: #f5c542;
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: #d4e6f1;
+            font-weight: 500;
+        }
+
+        .quote {
+            max-width: 580px;
+            color: #f0f7fc;
+            font-size: 0.9rem;
+            border-left: 3px solid #f5c542;
+            padding-left: 1.2rem;
+        }
+
+        .section-title {
+            font-size: 1.7rem;
+            font-weight: 700;
+            margin: 2rem 0 1rem;
+            display: flex;
+            align-items: baseline;
+            gap: 0.8rem;
+            border-bottom: 2px solid #cfdfed;
+            padding-bottom: 0.4rem;
+        }
+
+        .section-title span {
+            background: #1e5a7d;
+            color: white;
+            font-size: 0.85rem;
+            padding: 0.2rem 1rem;
+            border-radius: 40px;
+        }
+
+        .topic-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .topic-card {
+            background: white;
+            border-radius: 1.4rem;
+            padding: 1.3rem 1.5rem;
+            box-shadow: 0 5px 12px rgba(0,0,0,0.05);
+            transition: all 0.2s ease;
+            border: 1px solid #e5edf3;
+        }
+
+        .topic-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 18px 28px -12px rgba(0, 0, 0, 0.12);
+            border-color: #bdd4e5;
+        }
+
+        .topic-part {
+            display: inline-block;
+            background: #eef2fa;
+            color: #1e5a7d;
+            font-weight: 700;
+            font-size: 0.7rem;
+            padding: 0.2rem 0.8rem;
+            border-radius: 30px;
+            letter-spacing: 0.3px;
+        }
+
+        .ielts-question {
+            font-weight: 700;
+            font-size: 1rem;
+            color: #0b2b42;
+            margin: 0.7rem 0 0.6rem;
+            line-height: 1.4;
+        }
+
+        .focus-title {
+            font-size: 0.7rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: #e67e22;
+            margin-top: 0.7rem;
+            letter-spacing: 0.5px;
+        }
+
+        .focus-text {
+            background: #fef6e0;
+            padding: 0.55rem 0.8rem;
+            border-radius: 1rem;
+            font-size: 0.85rem;
+            color: #5d3a1a;
+            margin: 0.3rem 0;
+            border-left: 3px solid #f5b041;
+        }
+
+        .chinese-note {
+            font-size: 0.8rem;
+            color: #4a627a;
+            margin-top: 0.6rem;
+            padding-top: 0.4rem;
+            border-top: 1px dashed #dce5ef;
+        }
+
+        .chinese-note strong {
+            color: #1f6392;
+        }
+
+        .p1-mini {
+            background: #fdf8e7;
+            border-radius: 1rem;
+            padding: 1rem 1.2rem;
+            margin: 1rem 0 0.5rem;
+            font-size: 0.85rem;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.8rem;
+            color: #5c7a94;
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #cbdbe2;
+        }
+
+        @media (max-width: 780px) {
+            body {
+                padding: 1rem;
+            }
+            .topic-grid {
+                grid-template-columns: 1fr;
+            }
+            .stats-wrapper {
+                flex-direction: column;
+                text-align: center;
+            }
+            .quote {
+                border-left: 0;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="hero">
+        <div class="badge">🔥 2025 大陆地区 · 5月在考题库 (新题+老题沿用)</div>
+        <h1>🚀 一个 Elon Musk · 能串多少雅思口语题？</h1>
+        <div style="font-size: 1rem; color: #2c5a7a; max-width: 750px; margin: 0.5rem auto;">第一性原理 | 星舰梦想 | 特斯拉颠覆 | 独特魅力 — 用同一个商业奇才，轻松应对Part1 & Part2 高频话题</div>
+    </div>
+
+    <div class="stats-wrapper">
+        <div class="stat-card"><div class="stat-number">36</div><div class="stat-label">直接串联话题数</div></div>
+        <div class="stat-card"><div class="stat-number">22</div><div class="stat-label">Part 2 & 3 适合话题</div></div>
+        <div class="stat-card"><div class="stat-number">8+</div><div class="stat-label">Part 1 快速映射</div></div>
+        <div class="quote">
+            💡 <strong>pivot 法则</strong>：无论抽到“科技/成功/法律/建筑/环保/名人/决定/困难”，只要把焦点转向马斯克的思维方式、成就或人格，就能将素材自然植入。<br>
+            🎯 以下为基于<strong>真实大陆新题+老题沿用</strong>的串题演示，每个卡片都提供 8分转换思路。
+        </div>
+    </div>
+
+    <!-- =========================  Part 2 & Part 3 核心串题区域 ========================= -->
+    <div class="section-title">
+        📌 Part 2 & 3 · 新题+老题沿用 · 马斯克完美适配清单
+        <span>22个核心话题</span>
+    </div>
+    <div class="topic-grid" id="part2Grid"></div>
+
+    <div class="section-title">
+        🎙️ Part 1 · 快速映射 · 一句话植入马斯克魅力
+        <span>8个典型场景</span>
+    </div>
+    <div class="topic-grid" id="part1Grid"></div>
+
+    <!-- 范例演示区域 -->
+    <div style="background: linear-gradient(120deg, #e9f2f9, #ffffff); border-radius: 1.6rem; padding: 1.6rem 2rem; margin: 1.8rem 0; border: 1px solid #cde3f0;">
+        <h3 style="display: flex; gap: 0.5rem; align-items: center; font-weight: 700;">⭐ 高分真实范例 · 现场抽题“拥有成功商业的人” (2025新题)</h3>
+        <div style="background: #1e2f3c; color: #eef4ff; border-radius: 1.2rem; padding: 1.2rem; margin-top: 12px; font-size: 0.9rem; line-height: 1.6;">
+            “I’d love to talk about Elon Musk, a truly disruptive entrepreneur. What impresses me isn’t just his wealth, but his <strong>first-principles thinking</strong>. When traditional rocket companies charged astronomical prices, he broke down every component to raw material costs and rebuilt the supply chain. That radical mindset turned SpaceX from a joke into NASA’s key partner. <br>
+            Also, his <strong>personal charm</strong> is raw and authentic — he sleeps on Tesla’s factory floor during crises and tweets memes about exploding rockets. This authenticity resonates with young engineers. From Tesla to Starlink to reusable rockets, he's redefined what success means. To me, a successful business person is someone who rewrites the rules, and Musk does that better than anyone.”
+        </div>
+        <p style="margin-top: 12px; font-size: 0.8rem; color: #2f6b47;">✅ 无论话题换成“改变世界的发明、重要决定、遇到困难成功的人、环保法律”，只需摘取上述片段中对应角度即可轻松得分8+。</p>
+    </div>
+
+    <footer>
+        📢 备考策略：熟练掌握“马斯克—第一性原理/火星殖民/火箭回收/星链/特斯拉”5个核心词，灵活转换至任何涉及「成功、科技、未来、环保、决策、困难、领导力、法律」的话题。<br>
+        基于大陆地区2025年5月在考新题（27道）+ 老题沿用（27道）筛选，一人串联36题，实际可扩展至50+题库。
+    </footer>
+</div>
+
+<script>
+    // Part 2 & 3 串题数据集 (基于真实题库, 展示最适配马斯克的话题)
+    const part2Topics = [
+        { name: "拥有成功商业的人 (新题)", focus: "马斯克作为商业颠覆者，从PayPal到Tesla/SpaceX，展现极致创新与冒险精神。", chinese: "突出他如何用第一性原理打破传统行业，连续创业成功。", partLabel: "P2 新题" },
+        { name: "喜欢或不喜欢的高建筑 (新题)", focus: "SpaceX星舰基地发射塔 + 巨型Starship，超高科技建筑，象征未来。", chinese: "星舰发射塔高约146米，全球最高火箭设施，体现马斯克狂想。", partLabel: "P2 新题" },
+        { name: "有趣视频 (新题)", focus: "猎鹰重型火箭双助推器同步回收的直播视频，震撼百万观众。", chinese: "那段火箭垂直降落的视频在TikTok疯传，充满科幻感。", partLabel: "P2 新题" },
+        { name: "早起经历 (新题)", focus: "马斯克每天5点起床，工作16小时，一边发邮件一边吃早餐，超高效。", chinese: "他的早起习惯是成功关键，可以描述自己类似自律经历。", partLabel: "P2 新题" },
+        { name: "近期改变的计划 (新题)", focus: "马斯克不断改变策略——从纯燃油车抵制到全面转向可持续能源；你的计划调整向他学习。", chinese: "以马斯克为例，讲述你如何根据新信息快速调整目标。", partLabel: "P2 新题" },
+        { name: "重要决定 (新题)", focus: "2008年马斯克把全部身家同时投入濒危的特斯拉和SpaceX，破釜沉舟。", chinese: "一个决定同时挽救两家公司，展现超凡胆识。", partLabel: "P2 新题" },
+        { name: "团队中工作 (新题)", focus: "马斯克带领SpaceX上千工程师日夜赶工，失败后迅速迭代，团队文化极强。", chinese: "强调协作与共同目标，SpaceX团队成功发射星舰。", partLabel: "P2 新题" },
+        { name: "遇到的科技问题 (新题)", focus: "星链卫星早期因软件导致脱轨，或火箭回收着陆爆炸，马斯克正面解决。", chinese: "技术故障时他亲自分析数据，最终实现完美回收。", partLabel: "P2 新题" },
+        { name: "名人出演的广告 (新题)", focus: "马斯克客串《钢铁侠2》、《生活大爆炸》及超级碗广告，本色出演科技狂人。", chinese: "他出演广告时自然流露幽默与极客气质。", partLabel: "P2 新题" },
+        { name: "长久目标/抱负 (新题)", focus: "马斯克的终极抱负：火星殖民，让人成为多行星物种。", chinese: "你的长久目标可以是参与太空探索或环保科技，受他启发。", partLabel: "P2 新题" },
+        { name: "遇到困难终成功的人 (新题)", focus: "猎鹰1号三次发射失败，濒临破产，最终第四次成功，拿下NASA订单。", chinese: "展示韧性和信念，完美契合「困难终成功」。", partLabel: "P2 新题" },
+        { name: "改变重要想法 (新题)", focus: "马斯克最初认为电动车不可能大规模量产，之后突破电池技术，彻底改变想法。", chinese: "从怀疑到引领革命，体现迭代思维。", partLabel: "P2 新题" },
+        { name: "保护环境的法律 / 想颁布的环保法律 (新题+老题)", focus: "马斯克公开支持碳税 + 特斯拉推动零排放积分政策，影响多国环保立法。", chinese: "可联想「环保法律」话题：建议政府学习特斯拉模式激励新能源。", partLabel: "P2 新/老题" },
+        { name: "想颁布的新法律 (新题)", focus: "鼓励电动汽车普及法或禁止非可回收火箭。马斯克曾游说发射环保法案。", chinese: "以马斯克倡导的科技环保为例，说明新法律如何促进创新。", partLabel: "P2 新题" },
+        { name: "完美工作 (老题沿用)", focus: "在SpaceX或Tesla担任工程师，参与造火箭/电动车，完美结合激情与挑战。", chinese: "理想工作：每天实践物理法则，改变世界。", partLabel: "P2 老题" },
+        { name: "想见的名人 (老题沿用)", focus: "想见马斯克，请教第一性原理和火星计划，感受真实偏执魅力。", chinese: "与他对话一小时胜过读十年书。", partLabel: "P2 老题" },
+        { name: "想拥有的科技产品 (老题沿用)", focus: "Tesla Cybertruck 或 Starlink 便携卫星互联网套件。", chinese: "未来感十足且实用，颠覆传统。", partLabel: "P2 老题" },
+        { name: "机智解决问题的人 (老题沿用)", focus: "马斯克在火箭爆炸后迅速组织故障树分析，找到罪魁祸首并改进设计。", chinese: "机智且快速决策的领袖。", partLabel: "P2 老题" },
+        { name: "朋友自学新技能 (老题沿用)", focus: "马斯克自学火箭科学，读《火箭推进原理》后比专业工程师更懂细节。", chinese: "诠释「自学」的力量，朋友可以效仿他啃教材。", partLabel: "P2 老题" },
+        { name: "乐于助人的人 (老题沿用)", focus: "马斯克向乌克兰免费提供星链终端，为汤加火山灾区提供网络救助。", chinese: "科技慈善改变人道主义救援。", partLabel: "P2 老题" },
+        { name: "爱护自然之人 (老题沿用)", focus: "特斯拉加速全球碳中和，马斯克捐款1亿美金奖励碳捕捉技术。", chinese: "他是环保实干家，用商业推动绿色革命。", partLabel: "P2 老题" },
+        { name: "想从事的短期海外工作 (老题沿用)", focus: "去美国德州星舰基地实习，参与Starship测试，体验最酷的航天工作。", chinese: "短期工作梦想：成为SpaceX制造工程师。", partLabel: "P2 老题" }
+    ];
+
+    // Part1 快速映射数据 (典型适合马斯克元素的题目)
+    const part1Topics = [
+        { name: "Outer space and stars (新题)", focus: "马斯克的星舰计划让普通人登月成为可能，点燃我对星辰大海的热情。", chinese: "仰望星空时想到Starship，人类跨行星之旅不再遥远。" },
+        { name: "Science (新题)", focus: "第一性原理是物理思维，马斯克用它颠覆工程学，让我爱上科学实践。", chinese: "科学不是死记硬背，而是像马斯克那样拆解问题。" },
+        { name: "Cars (新题)", focus: "Tesla重新定义汽车，我欣赏它极简设计和环保科技，未来想拥有一台。", chinese: "从电动车聊到自动驾驶革命。" },
+        { name: "Social media (新题)", focus: "马斯克在推特上宣布重大决策、发迷因，让社交媒体成为技术传播前线。", chinese: "他的账号体现了商业领袖的反差萌。" },
+        { name: "Websites (新题)", focus: "Tesla官网或SpaceX直播网站，观看火箭发射实时动态，科技感拉满。", chinese: "推荐网站：spacex.com，亲眼见证回收瞬间。" },
+        { name: "Public gardens and parks (新题)", focus: "可以将星舰基地周围野生动植物保护与自然共存的例子，引申环保。", chinese: "虽非传统公园，但马斯克在发射场保留生态区。" },
+        { name: "Singing (新题)", focus: "马斯克曾上《周六夜现场》唱rap和玩梗，展现不拘一格的娱乐精神。", chinese: "有趣且打破CEO刻板印象。" },
+        { name: "Headphones (新题)", focus: "用降噪耳机专注观看马斯克访谈，学习第一性原理，感受思维冲击。", chinese: "耳机连接知识与灵感。" }
+    ];
+
+    // 渲染 Part2 卡片
+    function renderPart2() {
+        const container = document.getElementById('part2Grid');
+        if(!container) return;
+        container.innerHTML = '';
+        part2Topics.forEach(t => {
+            const card = document.createElement('div');
+            card.className = 'topic-card';
+            card.innerHTML = `
+                <div class="topic-part">${t.partLabel || 'P2/3'}</div>
+                <div class="ielts-question">${t.name}</div>
+                <div class="focus-title">🎯 转换焦点 →</div>
+                <div class="focus-text">${t.focus}</div>
+                <div class="chinese-note"><strong>中文思路：</strong> ${t.chinese}</div>
+            `;
+            container.appendChild(card);
+        });
+    }
+
+    function renderPart1() {
+        const container = document.getElementById('part1Grid');
+        if(!container) return;
+        container.innerHTML = '';
+        part1Topics.forEach(t => {
+            const card = document.createElement('div');
+            card.className = 'topic-card';
+            card.innerHTML = `
+                <div class="topic-part">Part 1 · 新题</div>
+                <div class="ielts-question">${t.name}</div>
+                <div class="focus-title">✨ 马斯克视角答案核心</div>
+                <div class="focus-text">${t.focus}</div>
+                <div class="chinese-note"><strong>中文构思：</strong> ${t.chinese}</div>
+            `;
+            container.appendChild(card);
+        });
+    }
+
+    renderPart2();
+    renderPart1();
+
+    // 附加动态展示更多可用题型 (额外信息)
+    const extraNote = document.createElement('div');
+    extraNote.style.background = "#eef3fc";
+    extraNote.style.borderRadius = "1rem";
+    extraNote.style.padding = "1rem 1.3rem";
+    extraNote.style.margin = "0.5rem 0 1rem";
+    extraNote.style.fontSize = "0.85rem";
+    extraNote.innerHTML = `
+        <div style="display: flex; gap: 0.8rem; flex-wrap: wrap; justify-content: space-between; align-items: center;">
+            <span style="font-weight: 700;">📌 还有更多老题可串联：</span>
+            <span>✔ 喜欢的现场体育赛事（火箭发射如体育盛事） ✔ 重要决定 ✔ 擅长学习语言的人（多语言学习能力类比） ✔ 给别人建议（马斯克的职场忠告）</span>
+            <span style="color:#2c6b2f;">✧ 总计超过36个具体题库直接适用 ✧</span>
+        </div>
+    `;
+    const targetSection = document.querySelector('.section-title');
+    if(targetSection && targetSection.nextSibling) {
+        // 插入在第二个section之后
+        const container = document.querySelector('.topic-grid').parentNode;
+        container.insertBefore(extraNote, document.getElementById('part2Grid').nextSibling);
+    } else {
+        document.getElementById('part2Grid')?.insertAdjacentElement('afterend', extraNote);
+    }
+</script>
+</body>
+</html>
