@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>雅思口语Part 2 · 人物类全串题 | 一材多用：Gabriel Attal</title>
+    <title>雅思口语 Part 2 · 人物类全串题 | 8-9分高阶素材库</title>
     <style>
         * {
             margin: 0;
@@ -12,10 +12,11 @@
         }
 
         body {
-            background: #f2f5f9;
-            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-            padding: 30px 20px;
-            color: #1e2a3e;
+            background: #f4f7fc;
+            font-family: 'Inter', 'Segoe UI', 'Roboto', system-ui, sans-serif;
+            padding: 2rem 1.5rem;
+            color: #1a2c3e;
+            line-height: 1.5;
         }
 
         .container {
@@ -23,163 +24,158 @@
             margin: 0 auto;
         }
 
-        /* header */
-        .hero {
-            background: linear-gradient(135deg, #1e2a3e 0%, #0f1724 100%);
-            color: white;
+        /* header 区 */
+        .high-score-header {
+            background: linear-gradient(145deg, #0b2b3b 0%, #06212e 100%);
             border-radius: 2rem;
             padding: 2rem 2rem 1.8rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 12px 25px -10px rgba(0,0,0,0.2);
+            margin-bottom: 2.5rem;
+            box-shadow: 0 20px 35px -12px rgba(0,0,0,0.25);
+            color: white;
         }
 
-        .hero h1 {
-            font-size: 1.9rem;
+        .high-score-header h1 {
+            font-size: 2.2rem;
+            letter-spacing: -0.5px;
             margin-bottom: 0.5rem;
-            letter-spacing: -0.3px;
             display: flex;
-            align-items: center;
-            gap: 10px;
             flex-wrap: wrap;
+            align-items: baseline;
+            gap: 1rem;
         }
 
-        .hero h1 span {
-            background: #ffb347;
-            color: #1e2a3e;
-            font-size: 1rem;
-            padding: 0.2rem 0.8rem;
+        .badge-group {
+            display: flex;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+            margin-top: 0.5rem;
+        }
+
+        .badge {
+            background: rgba(255,255,240,0.2);
+            backdrop-filter: blur(4px);
+            padding: 0.3rem 1rem;
             border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            border: 1px solid rgba(255,215,150,0.5);
+        }
+
+        .core-material {
+            background: #1a3f4e;
+            border-radius: 1.2rem;
+            margin-top: 1.8rem;
+            padding: 1.2rem 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .core-text {
+            flex: 2;
+        }
+
+        .core-text p {
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .highlight {
+            color: #ffd966;
             font-weight: 600;
         }
 
-        .hero p {
-            font-size: 1.05rem;
-            opacity: 0.85;
-            margin-top: 0.5rem;
-            line-height: 1.4;
-        }
-
-        .core-card {
-            background: rgba(255,255,255,0.1);
-            backdrop-filter: blur(4px);
-            border-radius: 1.5rem;
-            padding: 1rem 1.5rem;
-            margin-top: 1.2rem;
-            border: 1px solid rgba(255,255,255,0.2);
-        }
-
-        .core-card h3 {
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .core-card ul {
-            list-style: none;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.8rem;
-            margin-top: 0.5rem;
-        }
-
-        .core-card li {
-            background: #00000030;
-            padding: 0.2rem 1rem;
-            border-radius: 30px;
+        .tip {
+            background: #0e2e3b;
+            border-radius: 1rem;
+            padding: 0.6rem 1rem;
             font-size: 0.85rem;
-            font-weight: 500;
+            max-width: 280px;
         }
 
         /* 题目网格 */
         .topics-grid {
             display: flex;
             flex-direction: column;
-            gap: 1.25rem;
+            gap: 1.5rem;
         }
 
         .topic-card {
             background: white;
-            border-radius: 1.5rem;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            transition: all 0.2s ease;
+            border-radius: 1.8rem;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+            transition: all 0.2s;
             overflow: hidden;
-            border: 1px solid #e9edf2;
-        }
-
-        .topic-card:hover {
-            box-shadow: 0 12px 22px -10px rgba(0,0,0,0.12);
-            transform: translateY(-2px);
+            border: 1px solid #e2edf2;
         }
 
         .topic-header {
-            background: #f8fafd;
-            padding: 1rem 1.5rem;
-            border-bottom: 2px solid #e2e8f0;
+            background: #ffffff;
+            padding: 1.2rem 1.8rem;
             cursor: pointer;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            flex-wrap: wrap;
-            gap: 10px;
+            border-bottom: 2px solid #eef2f8;
+            transition: background 0.1s;
+        }
+
+        .topic-header:hover {
+            background: #fafdff;
         }
 
         .topic-title {
             font-weight: 700;
-            font-size: 1.2rem;
-            color: #0f2b3d;
+            font-size: 1.15rem;
+            color: #0f3b4c;
         }
 
-        .topic-badge {
-            background: #eef2ff;
+        .topic-type {
+            background: #e9f0f5;
             padding: 0.2rem 0.8rem;
-            border-radius: 30px;
+            border-radius: 40px;
             font-size: 0.7rem;
             font-weight: 600;
-            color: #2563eb;
+            color: #2c6e8f;
         }
 
         .toggle-icon {
             font-size: 1.4rem;
-            color: #5b6e8c;
+            color: #7f9bb5;
             transition: transform 0.2s;
         }
 
         .topic-answer {
-            padding: 1.5rem;
-            border-top: 1px solid #edf2f7;
-            background: #ffffff;
             display: none;
-            line-height: 1.55;
+            padding: 1.8rem;
+            background: #fefefe;
+            border-top: 1px solid #e9edf2;
+            line-height: 1.65;
         }
 
         .topic-answer.show {
             display: block;
         }
 
-        .answer-text {
-            color: #2c3e4e;
-            font-size: 0.98rem;
+        .answer-section {
+            font-size: 1rem;
+            color: #1d3e4f;
         }
 
-        .answer-text p {
-            margin-bottom: 0.8rem;
+        .answer-section p {
+            margin-bottom: 1rem;
         }
 
-        .answer-text strong {
-            color: #c2410c;
-            font-weight: 600;
-        }
-
-        .adapt-note {
-            background: #fef9e3;
-            border-left: 4px solid #f59e0b;
-            padding: 0.7rem 1rem;
-            margin-top: 1rem;
+        .high-level-phrases {
+            background: #eef6fa;
+            border-left: 5px solid #2c7da0;
+            padding: 0.8rem 1.2rem;
+            border-radius: 1rem;
+            margin: 1rem 0 0.5rem;
             font-size: 0.85rem;
-            border-radius: 12px;
-            color: #7c5c2c;
+            color: #145c74;
         }
 
         hr {
@@ -190,229 +186,222 @@
             margin-top: 3rem;
             text-align: center;
             font-size: 0.8rem;
-            color: #5c6f87;
-            border-top: 1px solid #dce3ec;
-            padding-top: 1.8rem;
+            color: #597a8f;
+            border-top: 1px solid #cde0e8;
+            padding-top: 2rem;
         }
 
         @media (max-width: 680px) {
-            .hero h1 { font-size: 1.5rem; }
+            body { padding: 1rem; }
+            .topic-header { padding: 0.9rem 1.2rem; }
             .topic-title { font-size: 1rem; }
-            .topic-header { padding: 0.8rem 1.2rem; }
             .topic-answer { padding: 1.2rem; }
-        }
-
-        button.accordion-trigger {
-            background: none;
-            border: none;
-            width: 100%;
-            text-align: left;
-            cursor: pointer;
+            .high-score-header h1 { font-size: 1.6rem; }
         }
     </style>
 </head>
 <body>
 <div class="container">
-    <div class="hero">
-        <h1>🎤 雅思口语 Part 2 · 人物类全串题 <span>One-for-all 万能素材</span></h1>
-        <p>只用「<strong>Gabriel Attal + 社交媒体初识 + 浪漫故事 + 政治勇气</strong>」灵活拆解<strong>剑真5-15所有12个人物话题</strong><br>
-        非名人类题目通过“视角转换/虚构角色/童年类比”同样套用，考场不慌张！</p>
-        <div class="core-card">
-            <h3>📌 核心素材档案 · Gabriel Attal</h3>
-            <ul>
-                <li>🔹 First knew: 社交媒体 (Twitter/TikTok)</li>
-                <li>🔹 关键事件: 与Stéphane Séjourné的公开恋情</li>
-                <li>🔹 感受: 惊讶 → 好奇 → 敬佩</li>
-                <li>🔹 后续: 搜索新闻，关注法国政治</li>
-                <li>🔹 人物成就: 法国最年轻总理，公开的性少数政要</li>
-                <li>🔹 结果: 极其成功，打破传统</li>
-            </ul>
-            <p style="margin-top: 8px; font-size:0.85rem;">✨ 串题心法：名人类直接用本人；非名人类 (朋友/家人/小孩/创业者) 采用<strong>“想象/类比/童年故事/精神榜样”</strong>，逻辑自洽即可。</p>
+    <div class="high-score-header">
+        <h1>🎙️ IELTS Speaking Part 2 · 人物类 <span style="font-size: 1.2rem;">8-9分旗舰串题</span></h1>
+        <div class="badge-group">
+            <span class="badge">✅ Lexical resource (high-level)</span>
+            <span class="badge">✅ Cohesion & fluency</span>
+            <span class="badge">✅ Grammatical range</span>
+            <span class="badge">✅ Personal engagement</span>
+        </div>
+        <div class="core-material">
+            <div class="core-text">
+                <p>🎯 <span class="highlight">万能核心人物 · Gabriel Attal</span> (法国前总理) </p>
+                <p>🔹 首次知晓：<strong>社交媒体</strong> (Twitter/抖音) – 他与伴侣Stéphane Séjourné的恋情吸引了我。<br>
+                🔹 情感弧线：<strong>惊讶 → 好奇 → 由衷敬佩</strong><br>
+                🔹 后续行动：主动搜索新闻，开始关注法国政治 & LGBTQ+ 代表性<br>
+                🔹 成就亮点：法国<strong>最年轻总理</strong>，公开同性身份，打破传统天花板<br>
+                🔹 结果定性：绝对成功，兼具<strong>社会影响力与政治才干</strong></p>
+            </div>
+            <div class="tip">
+                💡 8-9分秘笈：每个答案包含“具体细节 + 感受演变 + 高阶连接词 + 个人化升华”。本素材完美适配12道题目，灵活转化视角即可。
+            </div>
         </div>
     </div>
 
     <div class="topics-grid">
-        <!-- 题目列表 (按照图片顺序 12题) -->
-        <!-- 1. Describe a well-known person you like or admire -->
+        <!-- 1. well-known person -->
         <div class="topic-card">
             <div class="topic-header" onclick="toggleAnswer(this)">
-                <div><span class="topic-title">⭐ 1. Describe a well-known person you like or admire.</span><span class="topic-badge">名人类 · 直接套用</span></div>
+                <div><span class="topic-title">⭐ 1. Describe a well-known person you like or admire.</span><span class="topic-type">名人 · 直接套用</span></div>
                 <div class="toggle-icon">▼</div>
             </div>
             <div class="topic-answer">
-                <div class="answer-text">
-                    <p>The well-known person I truly admire is <strong>Gabriel Attal</strong>, the former French Prime Minister. I first knew him on social media – to be honest, I wasn’t even into politics. But one day a short video popped up about his romantic relationship with another French politician, Stéphane Séjourné. I was surprised because a top-level politician being so open about his private life is rare. Then I became curious and started to search for more about him.</p>
-                    <p>What I admire most is his courage and competence. He became the youngest Prime Minister in modern French history, and at the same time, he never hid his identity. His relationship with Séjourné is well-known yet both remain highly professional. This balance between personal authenticity and public duty really inspires me. He proves that being yourself does not stop you from achieving great success. That's why I like and admire him.</p>
-                    <div class="adapt-note">💡 串题要点：直接回答“名人”，强调admiration + 社交媒体初识 + 勇敢与成就。</div>
+                <div class="answer-section">
+                    <p>The person I genuinely admire is <strong>Gabriel Attal</strong>, the former French Prime Minister. To be perfectly honest, I’d never been particularly interested in politics until I stumbled upon a short video on Twitter featuring his romantic relationship with another French politician, Stéphane Séjourné. What struck me immediately was the sheer openness — two high-profile male politicians, openly together, without a hint of shame or secrecy. That was a real eye-opener for me.</p>
+                    <p>As I dug deeper, I discovered that Attal became the youngest prime minister in modern French history, all while staying true to his identity. His eloquence, his resilience in the face of conservative criticism, and his ability to balance a demanding public role with a genuine personal life left me in awe. I admire him not only for his political achievements but also for the quiet courage he displays every single day. He has reshaped what leadership can look like, and that, to me, is truly admirable.</p>
+                    <div class="high-level-phrases">📌 高分表达：stumbled upon / a real eye-opener / dug deeper / eloquence / resilience / left me in awe / reshaped what leadership can look like</div>
                 </div>
             </div>
         </div>
 
-        <!-- 2. Describe a writer you would like to meet -->
+        <!-- 2. writer -->
         <div class="topic-card">
             <div class="topic-header" onclick="toggleAnswer(this)">
-                <div><span class="topic-title">📖 2. Describe a writer you would like to meet.</span><span class="topic-badge">名人类 · 轻度转换</span></div>
+                <div><span class="topic-title">📖 2. Describe a writer you would like to meet.</span><span class="topic-type">名人 · 轻微转换</span></div>
                 <div class="toggle-icon">▼</div>
             </div>
             <div class="topic-answer">
-                <div class="answer-text">
-                    <p>Although Gabriel Attal is not a typical novelist, I would love to meet him as a <strong>writer of political memoirs or essays</strong>. I first heard about him on social media because of his inspiring romance with Stéphane Séjourné. Later, I read some interviews and opinion pieces he wrote, and I realized his words are powerful—he writes clearly about social reform, equality, and being authentic in the public eye.</p>
-                    <p>I would like to meet him because I think he has a unique story to tell. He could write a book about modern leadership and identity. Meeting him would allow me to ask how he navigates pressure from traditional politics while staying true to himself. His life itself is like a compelling narrative: from a young minister to prime minister, all while being in an open relationship. That's a story I'd love to read, written by his own hand.</p>
-                    <div class="adapt-note">💡 串题要点：将“writer”解释为“未来的回忆录作者/政治评论作者”，利用其表达能力与故事性。</div>
+                <div class="answer-section">
+                    <p>While Gabriel Attal is not a novelist in the traditional sense, I’d argue he has the potential to be a remarkable <strong>political memoirist</strong>. I first came across him on social media, not because of his policies, but because of the heartwarming romance between him and Stéphane Séjourné. The way their relationship navigated the harsh spotlight of French politics felt like a compelling narrative waiting to be written.</p>
+                    <p>I would love to meet him because I believe he has a unique story to tell — one that intertwines ambition, identity, and authenticity. I imagine his memoir would explore themes of growing up as a young gay man in a conservative environment, rising to the highest echelons of power, and redefining success on his own terms. Meeting him would allow me to ask: “How did you stay grounded when everyone was watching?” His life itself reads like a bestseller, and I’d be fascinated to hear it from his own lips.</p>
+                    <div class="high-level-phrases">📌 高分表达：in the traditional sense / political memoirist / heartwarming / intertwines / echelons of power / redefining success / from his own lips</div>
                 </div>
             </div>
         </div>
 
-        <!-- 3. Describe a film/movie actor from your country who is very popular -->
+        <!-- 3. film actor (跨文化类比) -->
         <div class="topic-card">
             <div class="topic-header" onclick="toggleAnswer(this)">
-                <div><span class="topic-title">🎬 3. Describe a film/movie actor from your country who is very popular.</span><span class="topic-badge">灵活迁移 · 跨国类比</span></div>
+                <div><span class="topic-title">🎬 3. Describe a film/movie actor from your country who is very popular.</span><span class="topic-type">灵活迁移</span></div>
                 <div class="toggle-icon">▼</div>
             </div>
             <div class="topic-answer">
-                <div class="answer-text">
-                    <p>I know the question asks for an actor from my country, but let me tell you about a French politician who <strong>feels like a star in the political drama</strong> – Gabriel Attal. I first noticed him on social media because of his relationship with Stéphane Séjourné. It was like watching a real-life political romance series. He has charisma, youthful energy, and a clear speaking style, just like a leading actor in a film.</p>
-                    <p>In France, he is incredibly popular among young people. His public appearances, his way of handling debates, and his courage to be openly gay make him a compelling figure. If his life were turned into a movie, I would definitely watch it. Although he isn't from my country, his story transcends borders. So, for the sake of this topic, I’d say I admire him the same way I admire a famous actor — for his performance on the real political stage.</p>
-                    <div class="adapt-note">💡 串题要点：如果不限制本国，直接讲Attal；如果考官严格限定“from your country”，可补充说“类似气质演员”，此处示范灵活跨界。</div>
+                <div class="answer-section">
+                    <p>I realise the question asks for an actor from my own country, but I’d like to take a slightly creative approach and talk about Gabriel Attal — a French political figure who, in my eyes, possesses the charisma and star quality of a leading actor. I first noticed him on social media because of his relationship with Stéphane Séjourné; it was like a real-life political drama unfolding before my eyes. The way he handles media, delivers speeches, and commands attention is nothing short of theatrical.</p>
+                    <p>Although he isn’t Chinese, his popularity has crossed borders. Young people around the world, including myself, follow him as if he were a celebrity. If his life were turned into a biographical film, I’d be the first in line to watch it. So in spirit, I consider him an “actor” on the global stage — one whose performance is authentic, moving, and unforgettable.</p>
+                    <div class="high-level-phrases">📌 高分表达：a slightly creative approach / star quality / unfolding before my eyes / nothing short of theatrical / crossed borders / in spirit / authentic, moving, and unforgettable</div>
                 </div>
             </div>
         </div>
 
-        <!-- 4. Describe someone you know who has started a business -->
+        <!-- 4. started a business -->
         <div class="topic-card">
             <div class="topic-header" onclick="toggleAnswer(this)">
-                <div><span class="topic-title">🏢 4. Describe someone you know who has started a business.</span><span class="topic-badge">非名人类 · 视角转换</span></div>
+                <div><span class="topic-title">🏢 4. Describe someone you know who has started a business.</span><span class="topic-type">非名人 · 比喻法</span></div>
                 <div class="toggle-icon">▼</div>
             </div>
             <div class="topic-answer">
-                <div class="answer-text">
-                    <p>Although Gabriel Attal is a politician, I’d like to view him as the <strong>founder of a “personal brand” and political movement</strong>. I first knew him on social media thanks to his open relationship with Stéphane Séjourné. That unusual publicity actually helped him start a new style of politics – authentic, transparent, and media-savvy.</p>
-                    <p>Like a business entrepreneur, he identified a gap: young, openly gay leadership in conservative environments. He built his political career step by step, from junior minister to the youngest prime minister. His "startup" was his own political image, and he succeeded against all odds. I think this entrepreneurial spirit is similar to starting a business. He took risks, faced criticism, and eventually created a successful brand that inspires many. So, he might not sell products, but he definitely started something new.</p>
-                    <div class="adapt-note">💡 串题要点：将“创业”理解为开创事业/个人品牌，比喻式回答，逻辑通顺即可。</div>
+                <div class="answer-section">
+                    <p>Although Gabriel Attal has never run a commercial enterprise, I’d argue he successfully <strong>launched a brand</strong> — the brand of modern, authentic political leadership. I first heard about him on social media, drawn in by his relationship with Stéphane Séjourné. That initial curiosity led me to follow his career trajectory, and I quickly realised he was doing something revolutionary: building a public image rooted in transparency and vulnerability, much like an entrepreneur building a disruptive startup.</p>
+                    <p>He identified a gap in the market — young, openly gay leadership in a traditionally conservative field — and leveraged social media to connect directly with citizens. His 'business' succeeded because he took risks, faced backlash, and stayed consistent. In many ways, his political journey mirrors the startup journey: high risk, high reward, and relentless innovation. That's why I consider him a true 'founder' in his own right.</p>
+                    <div class="high-level-phrases">📌 高分表达：commercial enterprise / launched a brand / revolutionary / disruptive startup / identified a gap in the market / leveraged / mirrors the startup journey / in his own right</div>
                 </div>
             </div>
         </div>
 
-        <!-- 5. Describe a famous business person that you know about -->
+        <!-- 5. famous business person -->
         <div class="topic-card">
             <div class="topic-header" onclick="toggleAnswer(this)">
-                <div><span class="topic-title">💼 5. Describe a famous business person that you know about.</span><span class="topic-badge">名人类 · 跨界类比</span></div>
+                <div><span class="topic-title">💼 5. Describe a famous business person that you know about.</span><span class="topic-type">名人 · 跨界类比</span></div>
                 <div class="toggle-icon">▼</div>
             </div>
             <div class="topic-answer">
-                <div class="answer-text">
-                    <p>I’d like to talk about Gabriel Attal as a <strong>political entrepreneur</strong>. I first heard of him on social media – a video about his romance with Stéphane Séjourné appeared on my feed. I wasn't interested in politics at all, but their story caught my attention. Later I learned that he became France's youngest prime minister, managing the country's "operations" like a CEO.</p>
-                    <p>His benefits include strategic communication, crisis management, and building a loyal team. He turned his personal life into a symbol of progress, which attracted wide support from the younger generation. That kind of branding is very business-like. Although he is not a traditional businessperson, he demonstrates leadership and marketing genius. That's why I consider him a famous "business" figure in the realm of politics.</p>
-                    <div class="adapt-note">💡 串题要点：明确说明类比角度，强调管理能力与个人品牌营销。</div>
+                <div class="answer-section">
+                    <p>I’d like to talk about Gabriel Attal as a <strong>political entrepreneur</strong> — someone who has masterfully managed his personal brand like a CEO. I first stumbled upon him on social media, not because of a business deal, but because of his inspiring relationship with Stéphane Séjourné. What fascinated me was how he turned what could have been a political liability into a symbol of progress and authenticity.</p>
+                    <p>Like a savvy businessperson, he understood his audience, communicated with clarity, and built a loyal following across generations. He took calculated risks — being openly gay while climbing the political ladder — and the payoff was immense: becoming France's youngest prime minister. His strategic thinking, crisis management, and ability to inspire trust are exactly the qualities I associate with top entrepreneurs. So yes, he may not sell products, but he sells hope and change — and that’s a billion-dollar idea.</p>
+                    <div class="high-level-phrases">📌 高分表达：masterfully managed / political liability / savvy businessperson / calculated risks / the payoff was immense / strategic thinking / sells hope and change / billion-dollar idea</div>
                 </div>
             </div>
         </div>
 
-        <!-- 6. Describe one of your friends -->
+        <!-- 6. friend -->
         <div class="topic-card">
             <div class="topic-header" onclick="toggleAnswer(this)">
-                <div><span class="topic-title">👫 6. Describe one of your friends.</span><span class="topic-badge">非名人类 · 偶像朋友化</span></div>
+                <div><span class="topic-title">👫 6. Describe one of your friends.</span><span class="topic-type">非名人 · 理想化朋友</span></div>
                 <div class="toggle-icon">▼</div>
             </div>
             <div class="topic-answer">
-                <div class="answer-text">
-                    <p>If I could choose a friend from the public figures I admire, I would say Gabriel Attal would be an <strong>ideal friend</strong>. I first got to know him on social media – not because I cared about politics, but because of his lovely romance with Stéphane Séjourné. That made me feel like he’s a genuine, unpretentious person, the kind you’d love to have a coffee with.</p>
-                    <p>As a “friend” in my imagination, he would be honest, hardworking, and supportive. He’s someone who breaks norms and stays true to his identity. I’d love to talk with him about overcoming fear of public judgment, and how to balance personal happiness with professional ambition. Even though we’ve never met, following his journey online feels like being inspired by a close buddy. That's why I chose him to describe as a friend in spirit.</p>
-                    <div class="adapt-note">💡 串题要点：可明说“如果我可以选择一位朋友，那就是...”，雅思允许想象性作答。</div>
+                <div class="answer-section">
+                    <p>If I could choose a public figure to be my friend, without hesitation it would be Gabriel Attal. I first learned about him on social media — the story of his relationship with Stéphane Séjourné immediately made him feel relatable and human. Unlike many politicians who hide behind a cold facade, Attal seemed genuine, almost like someone you could grab a coffee with and have a real conversation.</p>
+                    <p>As a friend, I imagine he would be loyal, funny, and deeply supportive. He’s someone who has faced immense pressure yet remains kind and grounded. I would love to hear his advice on how to stay true to yourself when the world expects you to conform. While we’ve never met, following his journey has given me a sense of companionship — like having a wise older brother who cheers you on from afar. That’s why I’d proudly call him a friend in spirit.</p>
+                    <div class="high-level-phrases">📌 高分表达：without hesitation / relatable / cold facade / grab a coffee / remains kind and grounded / expects you to conform / a sense of companionship / in spirit</div>
                 </div>
             </div>
         </div>
 
-        <!-- 7. Describe someone in your family who you like -->
+        <!-- 7. family member -->
         <div class="topic-card">
             <div class="topic-header" onclick="toggleAnswer(this)">
-                <div><span class="topic-title">🏠 7. Describe someone in your family who you like.</span><span class="topic-badge">非名人类 · 精神家人</span></div>
+                <div><span class="topic-title">🏠 7. Describe someone in your family who you like.</span><span class="topic-type">非名人 · 精神家人</span></div>
                 <div class="toggle-icon">▼</div>
             </div>
             <div class="topic-answer">
-                <div class="answer-text">
-                    <p>Although Gabriel Attal is not a blood relative, I consider him as <strong>a role model like an older brother</strong> in my heart. I first knew him on social media because of his sweet relationship with Stéphane Séjourné. At that time, I was struggling with self-acceptance. Seeing him so confident and successful while being openly gay made me feel less alone.</p>
-                    <p>In my family, I don’t have someone that openly talks about courage and identity, but Attal, through his public life, gives me the same sense of support. I like him as if he were part of my extended family – reliable, inspiring, and caring. When I feel down, I read about his journey, and it lifts me up. That’s why I say he is like a family member I truly like.</p>
-                    <div class="adapt-note">💡 串题要点：虚拟类比“like a family member”，强调情感连接和精神家人。</div>
+                <div class="answer-section">
+                    <p>Although Gabriel Attal isn't blood-related, I consider him an honorary member of my family — the kind of inspirational older figure I never had. I first discovered him on social media, drawn by the quiet confidence he showed while navigating his relationship with Stéphane Séjourné in the public eye. At the time, I was struggling with my own self-acceptance, and seeing him thrive gave me a strange, powerful sense of reassurance.</p>
+                    <p>In my real family, no one talks openly about identity or courage. But Attal, through his speeches and his very presence, fills that gap for me. He embodies the values I wish my family could discuss — authenticity, resilience, and compassion. I like him the same way I like a beloved cousin or an understanding parent. He may never know I exist, but his influence on my life has been as real as any family member’s.</p>
+                    <div class="high-level-phrases">📌 高分表达：honorary member / inspirational older figure / struggling with self-acceptance / a strange, powerful sense of reassurance / fills that gap / embodies the values / as real as any family member’s</div>
                 </div>
             </div>
         </div>
 
-        <!-- 8. Describe a friend of your family you remember from your childhood -->
+        <!-- 8. family friend from childhood -->
         <div class="topic-card">
             <div class="topic-header" onclick="toggleAnswer(this)">
-                <div><span class="topic-title">🧸 8. Describe a friend of your family you remember from your childhood.</span><span class="topic-badge">非名人类 · 童年想象</span></div>
+                <div><span class="topic-title">🧸 8. Describe a friend of your family you remember from your childhood.</span><span class="topic-type">非名人 · 联想记忆</span></div>
                 <div class="toggle-icon">▼</div>
             </div>
             <div class="topic-answer">
-                <div class="answer-text">
-                    <p>I know this is tricky, but I’d like to recall a <strong>childhood memory connected to a public figure</strong> – Gabriel Attal. Of course, I didn’t know him as a child, but when I first saw him on social media (the romance with Séjourné), I was reminded of a family friend named David. That friend was also brave and always stood up for what he believed in. Attal's story brought back that warm feeling.</p>
-                    <p>If I reframe it, I can say that the "friend of my family" I remember is a person like Attal — someone who is not afraid to be different. When I was little, my parents had a colleague who was openly gay and very kind. He gave me advice about being honest. And now, seeing Attal on the news gives me the same nostalgia. So I connect Attal to that childhood memory, even though they are different people.</p>
-                    <div class="adapt-note">💡 串题要点：通过联想把Attal的精神特质与童年真实人物绑定，尊重题目但灵活串联。</div>
+                <div class="answer-section">
+                    <p>This might sound a bit unconventional, but let me explain. When I first saw Gabriel Attal on social media — again, because of his heartwarming romance with Stéphane Séjourné — he instantly reminded me of a childhood family friend named Uncle Marcus. Marcus was also openly gay, kind, and fiercely principled. He used to visit our home when I was seven, bringing me small gifts and telling me to always be myself.</p>
+                    <p>Attal evokes the exact same warmth and courage in me. So although I didn’t know Attal as a child, his personality mirrors that of a cherished family friend from my past. To me, he represents the same values: honesty, gentleness, and the determination to live authentically despite social pressure. So, in a very real way, he has become a symbolic continuation of that childhood memory — a friend of the family I carry in my heart.</p>
+                    <div class="high-level-phrases">📌 高分表达：a bit unconventional / heartwarming / fiercely principled / evokes the exact same warmth / mirrors that of a cherished family friend / symbolic continuation / carry in my heart</div>
                 </div>
             </div>
         </div>
 
-        <!-- 9. Describe a person who has done a lot of work to help people -->
+        <!-- 9. help people -->
         <div class="topic-card">
             <div class="topic-header" onclick="toggleAnswer(this)">
-                <div><span class="topic-title">🤝 9. Describe a person who has done a lot of work to help people.</span><span class="topic-badge">名人类 · 直接套用</span></div>
+                <div><span class="topic-title">🤝 9. Describe a person who has done a lot of work to help people.</span><span class="topic-type">名人 · 直接套用</span></div>
                 <div class="toggle-icon">▼</div>
             </div>
             <div class="topic-answer">
-                <div class="answer-text">
-                    <p>Gabriel Attal has helped people in many ways, especially by <strong>breaking stereotypes</strong> and promoting equality. I first learned about him on social media because of his beautiful relationship with Stéphane Séjourné. That opened my eyes: a top politician being openly gay and in a loving relationship while serving the public.</p>
-                    <p>As Minister of Education, he banned the abaya in schools to protect secularism and helped improve school safety. As Prime Minister, he focused on youth employment and social reforms. But perhaps his greatest help is inspiring thousands of young LGBTQ+ people to feel accepted. He has done a lot of work not only through policies but also by living authentically in the public eye. That's genuine help to our society.</p>
-                    <div class="adapt-note">💡 串题要点：强调政策贡献 + 象征性贡献，双重帮助。</div>
+                <div class="answer-section">
+                    <p>Gabriel Attal has helped people in ways that go far beyond policy. I first learned about him on social media through his relationship with Stéphane Séjourné — an unlikely entry point, but it opened my eyes to his broader impact. As Minister of Education, he implemented reforms to combat bullying and promote inclusivity in schools. As Prime Minister, he championed youth employment and affordable housing.</p>
+                    <p>But perhaps his most profound contribution is symbolic: by being an openly gay leader at the highest level, he has given hope to millions of LGBTQ+ young people around the world, including myself. Seeing someone like him succeed without hiding who he loves sends a powerful message: you belong, and you can thrive. That kind of help — emotional, psychological, and deeply personal — is often more transformative than any law. For that reason, I believe he has done extraordinary work to help people.</p>
+                    <div class="high-level-phrases">📌 高分表达：go far beyond policy / an unlikely entry point / broader impact / championed / most profound contribution / sends a powerful message / emotional, psychological, and deeply personal / extraordinary work</div>
                 </div>
             </div>
         </div>
 
-        <!-- 10. Describe someone you know who does something well -->
+        <!-- 10. does something well -->
         <div class="topic-card">
             <div class="topic-header" onclick="toggleAnswer(this)">
-                <div><span class="topic-title">🏅 10. Describe someone you know who does something well.</span><span class="topic-badge">名人类 · 技能突出</span></div>
+                <div><span class="topic-title">🏅 10. Describe someone you know who does something well.</span><span class="topic-type">名人 · 技能突出</span></div>
                 <div class="toggle-icon">▼</div>
             </div>
             <div class="topic-answer">
-                <div class="answer-text">
-                    <p>Gabriel Attal does <strong>public communication exceptionally well</strong>. I first noticed him on social media – not for politics, but for his romantic story with Stéphane Séjourné. Surprisingly, that made me watch his speeches and interviews. He is articulate, calm, and persuasive. Whether he's defending a new law or answering tough questions, he never loses his poise.</p>
-                    <p>In addition, he manages his public image masterfully. Instead of hiding his private life, he uses it to show authenticity. This skill helps him connect with young people and gain respect even from opponents. I think doing something well means being effective and true at the same time, and Attal definitely excels at that. That’s why I admire his communication ability.</p>
-                    <div class="adapt-note">💡 串题要点：具体“擅长的事情”——公共演讲/形象管理。</div>
+                <div class="answer-section">
+                    <p>Gabriel Attal does one thing exceptionally well: <strong>public communication with authenticity</strong>. I first noticed him on social media — not through a formal interview, but through viral clips where he spoke candidly about his relationship with Stéphane Séjourné. His tone was neither defensive nor flamboyant; it was just disarmingly honest. That rare quality made me want to hear more from him.</p>
+                    <p>Whether he’s addressing parliament, giving a press conference, or posting on Instagram, he manages to be both eloquent and relatable. He uses simple but powerful language, maintains eye contact, and never shies away from difficult topics. This skill has allowed him to connect with young voters and gain respect from opponents. In an era where political speech is often robotic, Attal stands out as a master of genuine communication. That’s something he does incredibly well.</p>
+                    <div class="high-level-phrases">📌 高分表达：exceptionally well / viral clips / candidly / neither defensive nor flamboyant / disarmingly honest / eloquent and relatable / never shies away / master of genuine communication</div>
                 </div>
             </div>
         </div>
 
-        <!-- 11. Describe a child that you know -->
+        <!-- 11. child (童年想象) -->
         <div class="topic-card">
             <div class="topic-header" onclick="toggleAnswer(this)">
-                <div><span class="topic-title">👶 11. Describe a child that you know.</span><span class="topic-badge">非名人类 · 童年版本</span></div>
+                <div><span class="topic-title">👶 11. Describe a child that you know.</span><span class="topic-type">非名人 · 传记童年</span></div>
                 <div class="toggle-icon">▼</div>
             </div>
             <div class="topic-answer">
-                <div class="answer-text">
-                    <p>This might sound unusual, but I’d like to describe <strong>Gabriel Attal as a child</strong> – based on what I’ve read about his early life. Although I never met him as a child, I imagine he was a determined and bright kid. I first knew about the adult Attal on social media because of his relationship with Séjourné, but later I read that as a teenager he was already passionate about politics and debate.</p>
-                    <p>If I think of him as a child I “know” through biography, he was probably curious, a bit shy but courageous. He grew up to become a symbol of inclusivity. Describing him as a child allows me to talk about how childhood shapes character. His story reminds me that every great adult was once a child with dreams. So this is my creative take on the topic.</p>
-                    <div class="adapt-note">💡 串题要点：用“传记中了解的童年形象”巧妙回答，展示灵活性。</div>
+                <div class="answer-section">
+                    <p>This might be a little unconventional, but I’d like to describe Gabriel Attal as a child — based on what I’ve read about his early years. I first learned about the adult Attal on social media, through his beautiful relationship with Stéphane Séjourné. Out of curiosity, I later looked up his biography, and I was fascinated by his childhood self. Apparently, he was an avid reader, deeply passionate about debate, and already showing signs of political awareness by the age of twelve.</p>
+                    <p>I imagine that child as curious, maybe a bit introverted, but fiercely determined. He once said in an interview that he felt “different” growing up, but he turned that feeling into fuel for his ambition. Describing him as a child allows me to appreciate how early experiences shape great leaders. That young Gabriel — full of dreams and uncertainties — is someone I feel I know, even though we’ve never met. And that’s why this answer feels meaningful to me.</p>
+                    <div class="high-level-phrases">📌 高分表达：a little unconventional / avid reader / signs of political awareness / fiercely determined / turned that feeling into fuel / appreciate how early experiences shape great leaders / full of dreams and uncertainties</div>
                 </div>
             </div>
         </div>
-
-        <!-- 12. 补充原表中还有? 列表最后一个是 Describe a child that you know，已覆盖。 共12个。 检查列表: 从well-known到child共11? 实际原图有12行: 第一行well-known, writer, actor, someone started business, famous business person, friend, family, family friend from childhood, person helped people, someone does well, child。 缺少一个 "someone you know who has started a business" 已经第4题, 正确。第5是famous business person。已完整。  -->
     </div>
 
     <div class="footer">
-        🌟 串题核心技巧：一个人物，多个角度。 <strong>Gabriel Attal</strong> 既是名人、领导者、偶像，也可以是精神朋友/家人/榜样。<br>
-        根据题目要求，适当调整“初次认知方式”（社交媒体/新闻）和“关系”（熟知/崇拜/类比），轻松覆盖剑雅5-15所有人物Part2！<br>
-        📌 实际考试中如果遇到“business person”或“actor”，说明转换视角，考官注重流利度和逻辑，不必100%真实。
+        🌟 <strong>8-9 分核心策略</strong>：每一段答案都包含“故事起因 → 细节描述 → 感受递进 → 抽象升华”。使用高阶词汇但不显刻意，语法混合复杂结构（倒装、虚拟、分词从句），并且保持自然流畅。用同一人物素材，灵活变换角度，轻松覆盖剑雅5-15所有Part 2人物话题。
     </div>
 </div>
 
 <script>
-    function toggleAnswer(headerElement) {
-        const card = headerElement.closest('.topic-card');
+    function toggleAnswer(headerElem) {
+        const card = headerElem.closest('.topic-card');
         const answerDiv = card.querySelector('.topic-answer');
-        const icon = headerElement.querySelector('.toggle-icon');
+        const icon = headerElem.querySelector('.toggle-icon');
         if (answerDiv.classList.contains('show')) {
             answerDiv.classList.remove('show');
             icon.innerHTML = '▼';
@@ -421,9 +410,7 @@
             icon.innerHTML = '▲';
         }
     }
-
-    // 默认展开第一个作为示例（可选），方便用户看到效果，但为了整洁，可以全部收起，但最好让用户知道可点。全部收起即可。
-    // 无需自动展开，保持页面整洁。
+    // 默认所有答案关闭，保持页面整洁
 </script>
 </body>
 </html>
