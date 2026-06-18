@@ -603,200 +603,269 @@ data.push({
   });
 
   // ======================== 新增短语 (进一步补充) ========================
+    data.push({
+      id: 'e11', category: 'events', band: '8+',
+      phrase: 'go the extra mile',
+      meaning: '加倍努力 / 付出额外努力',
+      ipa: '/ɡəʊ ði ˈekstrə maɪl/',
+      source: '现代英剧高频',
+      formality: '中性 / 习语',
+      synonyms: 'make an extra effort, exceed expectations',
+      collocations: ['willing to go the extra mile', 'always goes the extra mile'],
+      examples: [
+        'My teacher always goes the extra mile to help us understand difficult concepts.',
+        'If you want to succeed in business, you have to be prepared to go the extra mile.'
+      ],
+      tags: ['努力', '成功', '帮助', '团队'],
+      topicMatch: ['团队工作', '成功商业的人', '克服困难的人', '别人帮助']
+    });
+  
+    data.push({
+      id: 'e12', category: 'events', band: '7+',
+      phrase: 'snowed under',
+      meaning: '忙得不可开交 / 被工作淹没',
+      ipa: '/snəʊd ˈʌndə/',
+      source: '英剧日常对话',
+      formality: '非正式口语',
+      synonyms: 'overwhelmed, swamped, buried',
+      collocations: ['absolutely snowed under', 'snowed under with work'],
+      examples: [
+        'I was snowed under with assignments last week and barely had time to sleep.',
+        'She’s been snowed under with projects since she got promoted.'
+      ],
+      tags: ['忙碌', '压力', '工作', '学习'],
+      topicMatch: ['早起经历', '科技问题', '改变计划']
+    });
+  
+    data.push({
+      id: 'p9', category: 'people', band: '8+',
+      phrase: 'on the ball',
+      meaning: '机灵 / 敏锐 / 反应快',
+      ipa: '/ɒn ðə bɔːl/',
+      source: '现代英剧高频',
+      formality: '非正式口语',
+      synonyms: 'sharp, alert, quick-witted',
+      collocations: ['really on the ball', 'keep on the ball'],
+      examples: [
+        'My manager is really on the ball – she notices every detail and never misses a deadline.',
+        'To be a good doctor, you need to be on the ball at all times.'
+      ],
+      tags: ['聪明', '敏锐', '医生', '商人'],
+      topicMatch: ['医疗行业的人', '成功商业的人', '语言达人']
+    });
+  
+    data.push({
+      id: 'e13', category: 'events', band: '7+',
+      phrase: 'keep your chin up',
+      meaning: '别气馁 / 保持乐观',
+      ipa: '/kiːp jɔː tʃɪn ʌp/',
+      source: '英式口语常用',
+      formality: '非正式口语',
+      synonyms: 'stay positive, don\'t lose heart',
+      collocations: ['try to keep your chin up', 'told me to keep my chin up'],
+      examples: [
+        'My dad told me to keep my chin up when I didn\'t get the job I wanted.',
+        'Even though things are tough, I try to keep my chin up and focus on the future.'
+      ],
+      tags: ['鼓励', '乐观', '困难', '支持'],
+      topicMatch: ['克服困难的人', '改变计划', '重要决定']
+    });
+  
+    data.push({
+      id: 'e14', category: 'events', band: '7+',
+      phrase: 'call it a day',
+      meaning: '收工 / 结束 (当天的工作或活动)',
+      ipa: '/kɔːl ɪt ə deɪ/',
+      source: '英剧日常对话',
+      formality: '非正式口语',
+      synonyms: 'finish for the day, stop working',
+      collocations: ['decided to call it a day', 'let\'s call it a day'],
+      examples: [
+        'We were exhausted, so we decided to call it a day and continue tomorrow.',
+        'After six hours of studying, I thought it was time to call it a day.'
+      ],
+      tags: ['休息', '结束', '工作', '学习'],
+      topicMatch: ['早起经历', '团队工作', '改变计划']
+    });
+    // ---------- 三、事件/经历/感受 (events) ----------
   data.push({
-    id: 'e11', category: 'events', band: '8+',
+    id: 'e15', category: 'events', band: '8+',
     phrase: 'go the extra mile',
     meaning: '加倍努力 / 付出额外努力',
     ipa: '/ɡəʊ ði ˈekstrə maɪl/',
-    source: '现代英剧高频',
+    source: '现代英剧高频 / 习语',
     formality: '中性 / 习语',
-    synonyms: 'make an extra effort, exceed expectations',
-    collocations: ['willing to go the extra mile', 'always goes the extra mile'],
+    synonyms: 'make an extra effort, exceed expectations, go above and beyond',
+    collocations: ['willing to go the extra mile', 'always goes the extra mile', 'go the extra mile for'],
     examples: [
       'My teacher always goes the extra mile to help us understand difficult concepts.',
-      'If you want to succeed in business, you have to be prepared to go the extra mile.'
+      'If you want to succeed in business, you have to be prepared to go the extra mile.',
+      'The staff went the extra mile to make our stay comfortable.'
     ],
-    tags: ['努力', '成功', '帮助', '团队'],
+    tags: ['努力', '成功', '帮助', '团队', '奉献'],
     topicMatch: ['团队工作', '成功商业的人', '克服困难的人', '别人帮助']
   });
-
+  
   data.push({
-    id: 'e12', category: 'events', band: '7+',
+    id: 'e16', category: 'events', band: '7+',
     phrase: 'snowed under',
     meaning: '忙得不可开交 / 被工作淹没',
     ipa: '/snəʊd ˈʌndə/',
     source: '英剧日常对话',
     formality: '非正式口语',
-    synonyms: 'overwhelmed, swamped, buried',
-    collocations: ['absolutely snowed under', 'snowed under with work'],
+    synonyms: 'overwhelmed, swamped, buried, up to my ears',
+    collocations: ['absolutely snowed under', 'snowed under with work', 'snowed under by deadlines'],
     examples: [
       'I was snowed under with assignments last week and barely had time to sleep.',
-      'She’s been snowed under with projects since she got promoted.'
+      'She\'s been snowed under with projects since she got promoted.',
+      'With the end-of-year reports due, everyone in the office is snowed under.'
     ],
-    tags: ['忙碌', '压力', '工作', '学习'],
-    topicMatch: ['早起经历', '科技问题', '改变计划']
+    tags: ['忙碌', '压力', '工作', '学习', '截止日期'],
+    topicMatch: ['早起经历', '科技问题', '改变计划', '团队工作']
   });
-
+  
   data.push({
-    id: 'p9', category: 'people', band: '8+',
-    phrase: 'on the ball',
-    meaning: '机灵 / 敏锐 / 反应快',
-    ipa: '/ɒn ðə bɔːl/',
-    source: '现代英剧高频',
-    formality: '非正式口语',
-    synonyms: 'sharp, alert, quick-witted',
-    collocations: ['really on the ball', 'keep on the ball'],
-    examples: [
-      'My manager is really on the ball – she notices every detail and never misses a deadline.',
-      'To be a good doctor, you need to be on the ball at all times.'
-    ],
-    tags: ['聪明', '敏锐', '医生', '商人'],
-    topicMatch: ['医疗行业的人', '成功商业的人', '语言达人']
-  });
-
-  data.push({
-    id: 'e13', category: 'events', band: '7+',
-    phrase: 'keep your chin up',
-    meaning: '别气馁 / 保持乐观',
-    ipa: '/kiːp jɔː tʃɪn ʌp/',
-    source: '英式口语常用',
-    formality: '非正式口语',
-    synonyms: 'stay positive, don\'t lose heart',
-    collocations: ['try to keep your chin up', 'told me to keep my chin up'],
-    examples: [
-      'My dad told me to keep my chin up when I didn\'t get the job I wanted.',
-      'Even though things are tough, I try to keep my chin up and focus on the future.'
-    ],
-    tags: ['鼓励', '乐观', '困难', '支持'],
-    topicMatch: ['克服困难的人', '改变计划', '重要决定']
-  });
-
-  data.push({
-    id: 'e14', category: 'events', band: '7+',
+    id: 'e17', category: 'events', band: '7+',
     phrase: 'call it a day',
     meaning: '收工 / 结束 (当天的工作或活动)',
     ipa: '/kɔːl ɪt ə deɪ/',
     source: '英剧日常对话',
     formality: '非正式口语',
-    synonyms: 'finish for the day, stop working',
-    collocations: ['decided to call it a day', 'let\'s call it a day'],
+    synonyms: 'finish for the day, stop working, pack it in',
+    collocations: ['decided to call it a day', 'let\'s call it a day', 'time to call it a day'],
     examples: [
       'We were exhausted, so we decided to call it a day and continue tomorrow.',
-      'After six hours of studying, I thought it was time to call it a day.'
+      'After six hours of studying, I thought it was time to call it a day.',
+      'It\'s getting dark – let\'s call it a day and head home.'
     ],
-    tags: ['休息', '结束', '工作', '学习'],
+    tags: ['休息', '结束', '工作', '学习', '团队'],
     topicMatch: ['早起经历', '团队工作', '改变计划']
   });
-  // ---------- 三、事件/经历/感受 (events) ----------
-// ... 现有 e1 ~ e14 ...
-
-data.push({
-  id: 'e15', category: 'events', band: '8+',
-  phrase: 'go the extra mile',
-  meaning: '加倍努力 / 付出额外努力',
-  ipa: '/ɡəʊ ði ˈekstrə maɪl/',
-  source: '现代英剧高频 / 习语',
-  formality: '中性 / 习语',
-  synonyms: 'make an extra effort, exceed expectations, go above and beyond',
-  collocations: ['willing to go the extra mile', 'always goes the extra mile', 'go the extra mile for'],
-  examples: [
-    'My teacher always goes the extra mile to help us understand difficult concepts.',
-    'If you want to succeed in business, you have to be prepared to go the extra mile.',
-    'The staff went the extra mile to make our stay comfortable.'
-  ],
-  tags: ['努力', '成功', '帮助', '团队', '奉献'],
-  topicMatch: ['团队工作', '成功商业的人', '克服困难的人', '别人帮助']
-});
-
-data.push({
-  id: 'e16', category: 'events', band: '7+',
-  phrase: 'snowed under',
-  meaning: '忙得不可开交 / 被工作淹没',
-  ipa: '/snəʊd ˈʌndə/',
-  source: '英剧日常对话',
-  formality: '非正式口语',
-  synonyms: 'overwhelmed, swamped, buried, up to my ears',
-  collocations: ['absolutely snowed under', 'snowed under with work', 'snowed under by deadlines'],
-  examples: [
-    'I was snowed under with assignments last week and barely had time to sleep.',
-    'She\'s been snowed under with projects since she got promoted.',
-    'With the end-of-year reports due, everyone in the office is snowed under.'
-  ],
-  tags: ['忙碌', '压力', '工作', '学习', '截止日期'],
-  topicMatch: ['早起经历', '科技问题', '改变计划', '团队工作']
-});
-
-data.push({
-  id: 'e17', category: 'events', band: '7+',
-  phrase: 'call it a day',
-  meaning: '收工 / 结束 (当天的工作或活动)',
-  ipa: '/kɔːl ɪt ə deɪ/',
-  source: '英剧日常对话',
-  formality: '非正式口语',
-  synonyms: 'finish for the day, stop working, pack it in',
-  collocations: ['decided to call it a day', 'let\'s call it a day', 'time to call it a day'],
-  examples: [
-    'We were exhausted, so we decided to call it a day and continue tomorrow.',
-    'After six hours of studying, I thought it was time to call it a day.',
-    'It\'s getting dark – let\'s call it a day and head home.'
-  ],
-  tags: ['休息', '结束', '工作', '学习', '团队'],
-  topicMatch: ['早起经历', '团队工作', '改变计划']
-});
-
-data.push({
-  id: 'e18', category: 'events', band: '8+',
-  phrase: 'fall like ninepins',
-  meaning: '一个接一个地倒下 / 纷纷失败或生病',
-  ipa: '/fɔːl laɪk ˈnaɪnpɪnz/',
-  source: '英剧经典表达',
-  formality: '中性 / 习语',
-  synonyms: 'drop like flies, collapse one after another',
-  collocations: ['fell like ninepins', 'were falling like ninepins'],
-  examples: [
-    'Half the team fell like ninepins with the flu before the deadline.',
-    'In the final exam, students were falling like ninepins – it was incredibly tough.',
-    'When the news broke, share prices fell like ninepins across the market.'
-  ],
-  tags: ['失败', '生病', '团队', '竞争', '连锁反应'],
-  topicMatch: ['团队工作', '体育赛事', '科技问题', '改变计划']
-});
-
-data.push({
-  id: 'e19', category: 'events', band: '8+',
-  phrase: 'a good/great deal of',
-  meaning: '大量 / 非常多 (后接不可数名词)',
-  ipa: '/ə ɡʊd ɡreɪt diːl əv/',
-  source: '英剧高频',
-  formality: '正式 / 中性',
-  synonyms: 'a lot of, a large amount of, considerable',
-  collocations: ['a good deal of', 'a great deal of', 'takes a great deal of'],
-  examples: [
-    'They couldn\'t have succeeded without a good deal of luck.',
-    'Learning a new language requires a great deal of patience and practice.',
-    'The project demanded a great deal of time and effort from everyone involved.'
-  ],
-  tags: ['努力', '时间', '金钱', '资源', '耐心'],
-  topicMatch: ['长久目标', '科技问题', '克服困难的人', '重要决定']
-});
-
-data.push({
-  id: 'e20', category: 'events', band: '7+',
-  phrase: 'like a dog with two tails',
-  meaning: '非常开心 / 得意洋洋',
-  ipa: '/laɪk ə dɒɡ wɪð tuː teɪlz/',
-  source: '英式口语常用',
-  formality: '非正式口语',
-  synonyms: 'over the moon, delighted, thrilled to bits',
-  collocations: ['like a dog with two tails', 'was like a dog with two tails'],
-  examples: [
-    'He was like a dog with two tails when he got the promotion.',
-    'She was like a dog with two tails after winning the competition.',
-    'When I told him we were going on holiday, he was like a dog with two tails.'
-  ],
-  tags: ['开心', '成功', '获奖', '喜悦', '成就'],
-  topicMatch: ['体育赛事', '成功商业的人', '克服困难的人', '长久目标']
-});
+  
+  data.push({
+    id: 'e18', category: 'events', band: '8+',
+    phrase: 'fall like ninepins',
+    meaning: '一个接一个地倒下 / 纷纷失败或生病',
+    ipa: '/fɔːl laɪk ˈnaɪnpɪnz/',
+    source: '英剧经典表达',
+    formality: '中性 / 习语',
+    synonyms: 'drop like flies, collapse one after another',
+    collocations: ['fell like ninepins', 'were falling like ninepins'],
+    examples: [
+      'Half the team fell like ninepins with the flu before the deadline.',
+      'In the final exam, students were falling like ninepins – it was incredibly tough.',
+      'When the news broke, share prices fell like ninepins across the market.'
+    ],
+    tags: ['失败', '生病', '团队', '竞争', '连锁反应'],
+    topicMatch: ['团队工作', '体育赛事', '科技问题', '改变计划']
+  });
+  
+  data.push({
+    id: 'e19', category: 'events', band: '8+',
+    phrase: 'a good/great deal of',
+    meaning: '大量 / 非常多 (后接不可数名词)',
+    ipa: '/ə ɡʊd ɡreɪt diːl əv/',
+    source: '英剧高频',
+    formality: '正式 / 中性',
+    synonyms: 'a lot of, a large amount of, considerable',
+    collocations: ['a good deal of', 'a great deal of', 'takes a great deal of'],
+    examples: [
+      'They couldn\'t have succeeded without a good deal of luck.',
+      'Learning a new language requires a great deal of patience and practice.',
+      'The project demanded a great deal of time and effort from everyone involved.'
+    ],
+    tags: ['努力', '时间', '金钱', '资源', '耐心'],
+    topicMatch: ['长久目标', '科技问题', '克服困难的人', '重要决定']
+  });
+  
+  data.push({
+    id: 'e20', category: 'events', band: '7+',
+    phrase: 'like a dog with two tails',
+    meaning: '非常开心 / 得意洋洋',
+    ipa: '/laɪk ə dɒɡ wɪð tuː teɪlz/',
+    source: '英式口语常用',
+    formality: '非正式口语',
+    synonyms: 'over the moon, delighted, thrilled to bits',
+    collocations: ['like a dog with two tails', 'was like a dog with two tails'],
+    examples: [
+      'He was like a dog with two tails when he got the promotion.',
+      'She was like a dog with two tails after winning the competition.',
+      'When I told him we were going on holiday, he was like a dog with two tails.'
+    ],
+    tags: ['开心', '成功', '获奖', '喜悦', '成就'],
+    topicMatch: ['体育赛事', '成功商业的人', '克服困难的人', '长久目标']
+  });
+    data.push({
+    id: 'e21', category: 'events', band: '8+',
+    phrase: 'get off to a rocky start',
+    meaning: '一开始就不顺利 / 开局困难',
+    ipa: '/ɡet ɒf tə ə ˈrɒki stɑːt/',
+    source: '英剧日常对话',
+    formality: '中性 / 口语',
+    synonyms: 'start badly, have a difficult beginning',
+    collocations: ['got off to a rocky start', 'off to a rocky start'],
+    examples: [
+      'Our project got off to a rocky start because half the team fell ill in the first week.',
+      'My new job got off to a rocky start, but things improved after I got to know my colleagues.',
+      'The restaurant got off to a rocky start, but it\'s now one of the most popular in town.'
+    ],
+    tags: ['困难开头', '项目', '工作', '适应', '挫折'],
+    topicMatch: ['改变计划', '团队工作', '科技问题', '克服困难的人']
+  });
+  
+  data.push({
+    id: 'e22', category: 'events', band: '8+',
+    phrase: 'be thrown in at the deep end',
+    meaning: '从一开始就面对困难 / 被直接推到艰难处境',
+    ipa: '/biː θrəʊn ɪn ət ðə diːp end/',
+    source: '英剧高频 / 习语',
+    formality: '非正式口语',
+    synonyms: 'be put in a difficult situation without preparation, sink or swim',
+    collocations: ['thrown in at the deep end', 'get thrown in at the deep end'],
+    examples: [
+      'On my first day at work, I was thrown in at the deep end and had to lead a client meeting.',
+      'He was thrown in at the deep end when he took over the failing department.',
+      'I love being thrown in at the deep end – it forces you to learn quickly.'
+    ],
+    tags: ['挑战', '新工作', '压力', '适应', '成长'],
+    topicMatch: ['团队工作', '成功商业的人', '科技问题', '重要决定']
+  });
+  
+  data.push({
+    id: 'e23', category: 'events', band: '8+',
+    phrase: 'have a baptism of fire',
+    meaning: '初出茅庐就经受严峻考验 / 一开始就遇到艰难挑战',
+    ipa: '/hæv ə ˈbæptɪzəm əv faɪə/',
+    source: '英剧经典表达',
+    formality: '正式 / 文学性',
+    synonyms: 'face a difficult initiation, undergo a severe trial',
+    collocations: ['a baptism of fire', 'it was a baptism of fire'],
+    examples: [
+      'My first month as a teacher was a baptism of fire – I had to manage thirty energetic children.',
+      'The new manager had a baptism of fire when the company faced a sudden crisis.',
+      'Starting my own business was a baptism of fire, but it taught me invaluable lessons.'
+    ],
+    tags: ['考验', '挑战', '新角色', '困难', '经验'],
+    topicMatch: ['克服困难的人', '成功商业的人', '医疗行业的人', '重要决定']
+  });
+  
+  data.push({
+    id: 'e24', category: 'events', band: '8+',
+    phrase: 'face a steep learning curve',
+    meaning: '面对陡峭的学习曲线 / 需要大量学习，充满困难',
+    ipa: '/feɪs ə stiːp ˈlɜːnɪŋ kɜːv/',
+    source: '现代英剧高频',
+    formality: '中性 / 正式',
+    synonyms: 'have to learn a lot quickly, experience a challenging learning process',
+    collocations: ['a steep learning curve', 'faced a steep learning curve'],
+    examples: [
+      'When I started coding, I faced a steep learning curve – it took months to feel confident.',
+      'The new software had a steep learning curve, but the team eventually mastered it.',
+      'Moving to a new country always involves a steep learning curve, especially with the language.'
+    ],
+    tags: ['学习', '新技能', '语言', '适应', '挑战'],
+    topicMatch: ['语言达人', '科技问题', '改变计划', '旅行地']
+  });
   // ---------- 四、P3 观点 (p3) ----------
   data.push({
     id: 'p3_1', category: 'p3', band: '8+',
