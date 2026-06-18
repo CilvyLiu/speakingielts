@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>英剧地道表达 · 雅思口语词库</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* ===== 全局样式 ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f4f1ea;
+      font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      padding: 20px;
+      color: #2c3e4f;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    /* ===== 头部 ===== */
+    .header {
+      text-align: center;
+      padding: 30px 20px 20px;
+      background: linear-gradient(145deg, #1e2a3a, #2c3e4f);
+      border-radius: 24px;
+      margin-bottom: 30px;
+      color: #f4f1ea;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+    }
+
+    .header h1 {
+      font-size: 2.6rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+    .header h1 i {
+      color: #d4af37;
+      margin-right: 12px;
+    }
+    .header .sub {
+      font-size: 1.1rem;
+      opacity: 0.8;
+      font-weight: 300;
+      letter-spacing: 2px;
+    }
+    .header .badge-uk {
+      display: inline-block;
+      margin-top: 12px;
+      background: #d4af37;
+      color: #1e2a3a;
+      padding: 4px 18px;
+      border-radius: 30px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    /* ===== 筛选导航 ===== */
+    .filter-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px 16px;
+      margin-bottom: 30px;
+      padding: 0 8px;
+    }
+
+    .filter-btn {
+      background: transparent;
+      border: 2px solid #2c3e4f;
+      padding: 8px 22px;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: #2c3e4f;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+      background: #fff;
+    }
+
+    .filter-btn:hover {
+      background: #2c3e4f;
+      color: #f4f1ea;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(44, 62, 79, 0.15);
+    }
+
+    .filter-btn.active {
+      background: #2c3e4f;
+      color: #f4f1ea;
+      border-color: #2c3e4f;
+      box-shadow: 0 6px 14px rgba(44, 62, 79, 0.25);
+    }
+
+    /* ===== 瀑布流布局 (Masonry) ===== */
+    .masonry {
+      column-count: 3;
+      column-gap: 24px;
+      padding-bottom: 30px;
+    }
+
+    @media (max-width: 1024px) {
+      .masonry { column-count: 2; }
+    }
+    @media (max-width: 640px) {
+      .masonry { column-count: 1; }
+      .header h1 { font-size: 1.8rem; }
+    }
+
+    /* ===== 卡片样式 ===== */
+    .card {
+      break-inside: avoid;
+      background: #ffffff;
+      border-radius: 20px;
+      margin-bottom: 24px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04), 0 2px 6px rgba(0, 0, 0, 0.02);
+      transition: all 0.2s ease;
+      border: 1px solid rgba(44, 62, 79, 0.05);
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      box-shadow: 0 16px 36px rgba(44, 62, 79, 0.10);
+      transform: translateY(-3px);
+    }
+
+    /* 卡片头部 (始终可见) */
+    .card-header {
+      padding: 18px 22px 14px 22px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(0,0,0,0.02);
+      background: #fafaf8;
+    }
+
+    .card-header .phrase {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #1e2a3a;
+      letter-spacing: -0.3px;
+    }
+
+    .card-header .phrase i {
+      color: #d4af37;
+      font-size: 1rem;
+      margin-right: 10px;
+      opacity: 0.8;
+    }
+
+    .card-header .meaning {
+      font-size: 0.95rem;
+      color: #4a5b6b;
+      margin-top: 4px;
+      font-weight: 400;
+    }
+
+    .card-header .cat-tag {
+      background: #e8e4db;
+      padding: 3px 14px;
+      border-radius: 30px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: #2c3e4f;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      white-space: nowrap;
+      margin-left: 12px;
+      align-self: center;
+    }
+
+    .card-expand-icon {
+      color: #7a8a9a;
+      font-size: 0.9rem;
+      margin-left: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    /* 卡片展开内容 (默认隐藏) */
+    .card-body {
+      padding: 0 22px 0 22px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.45s cubic-bezier(0.33, 1, 0.68, 1), padding 0.3s ease;
+      background: #ffffff;
+    }
+
+    .card-body.open {
+      max-height: 2000px; /* 足够容纳所有内容 */
+      padding: 18px 22px 24px 22px;
+    }
+
+    .card-body .detail-block {
+      margin-bottom: 14px;
+    }
+
+    .card-body .detail-block:last-child {
+      margin-bottom: 0;
+    }
+
+    .card-body .label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: #7a8a9a;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .card-body .value {
+      font-size: 0.95rem;
+      color: #1e2a3a;
+      line-height: 1.6;
+    }
+
+    .card-body .value i {
+      color: #d4af37;
+      margin-right: 6px;
+      width: 18px;
+    }
+
+    .card-body .example-item {
+      background: #f6f4f0;
+      padding: 8px 14px;
+      border-radius: 12px;
+      margin-bottom: 6px;
+      font-size: 0.9rem;
+      border-left: 4px solid #d4af37;
+      color: #2c3e4f;
+    }
+
+    .card-body .example-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .card-body .tags-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 10px;
+      margin-top: 6px;
+    }
+
+    .card-body .topic-tag {
+      background: #eef2f5;
+      padding: 2px 14px;
+      border-radius: 30px;
+      font-size: 0.75rem;
+      color: #2c3e4f;
+      border: 1px solid #dce2e8;
+    }
+
+    /* ===== 话题匹配专用卡片 (第五部分) ===== */
+    .topic-match-card .card-header {
+      background: #f1efe9;
+      border-bottom: 2px solid #d4af37;
+    }
+
+    .topic-match-card .card-header .phrase {
+      font-size: 1.1rem;
+    }
+
+    .topic-match-card .card-body .rec-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 10px;
+    }
+
+    .topic-match-card .card-body .rec-list .rec-item {
+      background: #e8e4db;
+      padding: 4px 16px;
+      border-radius: 30px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #1e2a3a;
+    }
+
+    /* ===== 空状态 ===== */
+    .no-result {
+      text-align: center;
+      padding: 60px 20px;
+      color: #7a8a9a;
+      font-size: 1.1rem;
+      column-span: all;
+      background: #fafaf8;
+      border-radius: 40px;
+    }
+
+    /* ===== 滚动条美化 ===== */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #e8e4db; border-radius: 10px; }
+    ::-webkit-scrollbar-thumb { background: #b0a892; border-radius: 10px; }
+
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <!-- 头部 -->
+  <div class="header">
+    <h1><i class="fas fa-crown"></i> 英剧地道表达</h1>
+    <div class="sub">雅思口语 · 人物 / 物品 / 事件 · 瀑布流词库</div>
+    <div class="badge-uk"><i class="fas fa-flag"></i> 源自《唐顿庄园》《神探夏洛克》等</div>
+  </div>
+
+  <!-- 筛选导航 -->
+  <div class="filter-nav" id="filterNav">
+    <button class="filter-btn active" data-filter="all">全部 <i class="fas fa-th-list"></i></button>
+    <button class="filter-btn" data-filter="people">👤 人物</button>
+    <button class="filter-btn" data-filter="places">🏛️ 地点/物品</button>
+    <button class="filter-btn" data-filter="events">🎬 事件/感受</button>
+    <button class="filter-btn" data-filter="p3">💬 P3 观点</button>
+    <button class="filter-btn" data-filter="topics">📌 话题匹配</button>
+  </div>
+
+  <!-- 瀑布流容器 -->
+  <div class="masonry" id="masonryContainer"></div>
+
+</div>
+
+<script>
+  // =====================================================================
+  // 1. 数据池（大幅扩充：音标、来源、同义词、多例句、话题标签）
+  // =====================================================================
+  const data = [];
+
+  // ---------- 一、人物 (people) ----------
+  data.push({
+    id: 'p1',
+    category: 'people',
+    phrase: 'take a shine to sb',
+    meaning: '对某人一见如故 / 喜欢上',
+    ipa: '/teɪk ə ʃaɪn tuː/',
+    source: '《唐顿庄园》等英剧',
+    formality: '非正式口语',
+    synonyms: 'warm to, hit it off with, fancy (英式)',
+    examples: [
+      'I really took a shine to my childhood friend because he was so genuine.',
+      'In the interview, I took a shine to the manager immediately – she was so warm.'
+    ],
+    tags: ['发小', '朋友', '初次见面', '医疗从业者'],
+    topicMatch: ['发小', '医疗行业的人', '成功商业的人']
+  });
+
+  data.push({
+    id: 'p2',
+    category: 'people',
+    phrase: 'bear a striking resemblance to',
+    meaning: '与……极为相像',
+    ipa: '/beər ə ˈstraɪkɪŋ rɪˈzembləns tuː/',
+    source: '《神探夏洛克》',
+    formality: '中性 / 正式',
+    synonyms: 'look very like, be the spitting image of',
+    examples: [
+      'My childhood friend bears a striking resemblance to his father – same eyes and smile.',
+      'The old tower bears a striking resemblance to the one in the painting.'
+    ],
+    tags: ['家人', '外貌', '发小'],
+    topicMatch: ['发小', '旅行地']
+  });
+
+  data.push({
+    id: 'p3',
+    category: 'people',
+    phrase: 'level-headed',
+    meaning: '头脑冷静 / 沉稳',
+    ipa: '/ˌlevl ˈhedɪd/',
+    source: '英剧高频词',
+    formality: '中性 / 正式',
+    synonyms: 'composed, sensible, practical, calm',
+    examples: [
+      'She’s incredibly level-headed, which is why she makes such a good doctor.',
+      'Staying level-headed during the stressful presentation helped me deliver it smoothly.'
+    ],
+    tags: ['医生', '商人', '团队领导', '克服困难者'],
+    topicMatch: ['医疗行业的人', '成功商业的人', '团队工作', '克服困难的人']
+  });
+
+  data.push({
+    id: 'p4',
+    category: 'people',
+    phrase: 'credit sb with sth',
+    meaning: '认为某人具有某种品质',
+    ipa: '/ˈkredɪt ˈsʌmbədi wɪð/',
+    source: '《神探夏洛克》',
+    formality: '正式 / 中性',
+    synonyms: 'attribute to, give sb credit for',
+    examples: [
+      'I credit him with great patience and determination – that’s why he succeeded.',
+      'We should credit our teacher with inspiring us to learn languages.'
+    ],
+    tags: ['赞扬', '优点', '语言达人', '帮助过你的人'],
+    topicMatch: ['语言达人', '别人帮助', '克服困难的人']
+  });
+
+  data.push({
+    id: 'p5',
+    category: 'people',
+    phrase: 'not really a people person',
+    meaning: '不太合群 / 不善社交 (中性)',
+    ipa: '/nɒt ˈrɪəli ə ˈpiːpl ˈpɜːsn/',
+    source: '英剧日常对话',
+    formality: '非正式口语',
+    synonyms: 'introverted, shy, reserved',
+    examples: [
+      'My uncle is not really a people person, but he’s brilliant with plants.',
+      'I’m not a people person, so I prefer working alone in the lab.'
+    ],
+    tags: ['内向', '性格', '种菜的人'],
+    topicMatch: ['种菜的人', '无聊地方']
+  });
+
+  data.push({
+    id: 'p6',
+    category: 'people',
+    phrase: 'good Samaritans',
+    meaning: '乐于助人的人',
+    ipa: '/ɡʊd səˈmærɪtənz/',
+    source: '英剧典故',
+    formality: '中性 / 书面',
+    synonyms: 'helpers, charitable people, benefactors',
+    examples: [
+      'She’s one of those good Samaritans who always offers to help neighbors.',
+      'In the story, the animal is saved by a group of good Samaritans.'
+    ],
+    tags: ['帮助', '医疗', '动物故事'],
+    topicMatch: ['医疗行业的人', '别人帮助', '动物故事']
+  });
+
+  data.push({
+    id: 'p7',
+    category: 'people',
+    phrase: 'dressed to the nines',
+    meaning: '盛装打扮 / 穿着华丽',
+    ipa: '/drest tə ðə naɪnz/',
+    source: '《唐顿庄园》',
+    formality: '非正式口语',
+    synonyms: 'dressed up, in one\'s Sunday best, glammed up',
+    examples: [
+      'In that advert, the celebrity is dressed to the nines in a designer gown.',
+      'My grandmother was dressed to the nines for the wedding – she looked stunning.'
+    ],
+    tags: ['名人广告', '重要场合', '建筑装饰'],
+    topicMatch: ['名人广告', '高建筑']
+  });
+
+  data.push({
+    id: 'p8',
+    category: 'people',
+    phrase: 'in the grip of (emotion)',
+    meaning: '深陷某种情绪之中',
+    ipa: '/ɪn ðə ɡrɪp əv/',
+    source: '《唐顿庄园》',
+    formality: '正式 / 文学性',
+    synonyms: 'overcome by, consumed by, in the throes of',
+    examples: [
+      'He was in the grip of excitement when he started his business.',
+      'She was in the grip of anxiety before the important decision.'
+    ],
+    tags: ['心理状态', '情绪'],
+    topicMatch: ['重要决定', '改变计划']
+  });
+
+  // ---------- 二、地点/物品 (places) ----------
+  data.push({
+    id: 'pl1',
+    category: 'places',
+    phrase: 'means the world to sb',
+    meaning: '对某人意义重大 / 极为重要',
+    ipa: '/miːnz ðə wɜːld tə/',
+    source: '英剧高频',
+    formality: '中性 / 口语',
+    synonyms: 'is everything to, is priceless to, matters enormously',
+    examples: [
+      'That old family recipe means the world to my grandmother – it’s her heritage.',
+      'The view from my childhood home means the world to me, even now.'
+    ],
+    tags: ['珍贵物品', '家乡', '家庭食谱', '情感价值'],
+    topicMatch: ['高建筑', '特别食物', '旅行地', '拜访的家', '动物故事']
+  });
+
+  data.push({
+    id: 'pl2',
+    category: 'places',
+    phrase: 'outranks the Holy Grail',
+    meaning: '极为珍贵 / 抢手 (香饽饽)',
+    ipa: '/ˌaʊtˈræŋks ðə ˌhəʊli ˈɡreɪl/',
+    source: '《唐顿庄园》',
+    formality: '非正式 / 幽默',
+    synonyms: 'is highly sought-after, is the ultimate prize',
+    examples: [
+      'In that city, a flat with a river view outranks the Holy Grail.',
+      'For foodies, this special ingredient outranks the Holy Grail.'
+    ],
+    tags: ['稀有', '抢手', '食材', '景点'],
+    topicMatch: ['特别食物', '旅行地', '高建筑']
+  });
+
+  data.push({
+    id: 'pl3',
+    category: 'places',
+    phrase: 'gild the lily',
+    meaning: '画蛇添足 / 过度装饰',
+    ipa: '/ɡɪld ðə ˈlɪli/',
+    source: '《唐顿庄园》',
+    formality: '中性 / 正式 (习语)',
+    synonyms: 'over-embellish, overdo it, go overboard',
+    examples: [
+      'I think they gilded the lily with all that gold paint – it’s too much.',
+      'The room was beautiful, but the extra chandeliers just gilded the lily.'
+    ],
+    tags: ['过度装饰', '不喜欢', '建筑', '家居'],
+    topicMatch: ['高建筑', '拜访的家', '名人广告']
+  });
+
+  data.push({
+    id: 'pl4',
+    category: 'places',
+    phrase: 'take the shine off sth',
+    meaning: '让某物 / 体验黯然失色',
+    ipa: '/teɪk ðə ʃaɪn ɒf/',
+    source: '《唐顿庄园》',
+    formality: '中性',
+    synonyms: 'spoil, mar, detract from',
+    examples: [
+      'The constant noise and traffic really take the shine off that otherwise beautiful building.',
+      'Bad weather took the shine off our trip to the coast.'
+    ],
+    tags: ['扫兴', '缺点', '地点', '事件'],
+    topicMatch: ['无聊地方', '拜访的家', '未回复信息']
+  });
+
+  // 注：dressed to the nines 已出现在人物中，但也可用于建筑，在此复用标签
+  // 为不重复，加一个额外条目用于地点（实际指向相同短语，但单独话题）
+  data.push({
+    id: 'pl5',
+    category: 'places',
+    phrase: 'dressed to the nines (建筑)',
+    meaning: '装饰得富丽堂皇',
+    ipa: '/drest tə ðə naɪnz/',
+    source: '《唐顿庄园》',
+    formality: '非正式口语',
+    synonyms: 'lavishly decorated, ornate, sumptuous',
+    examples: [
+      'The hotel is dressed to the nines with marble and chandeliers.',
+      'The new shopping mall is dressed to the nines, but it feels a bit impersonal.'
+    ],
+    tags: ['建筑外观', '华丽'],
+    topicMatch: ['高建筑', '旅行地']
+  });
+
+  // ---------- 三、事件/经历/感受 (events) ----------
+  data.push({
+    id: 'e1',
+    category: 'events',
+    phrase: 'chuffed to bits',
+    meaning: '高兴极了',
+    ipa: '/tʃʌft tə bɪts/',
+    source: '英式俚语 (现代常用)',
+    formality: '非正式口语',
+    synonyms: 'delighted, over the moon, thrilled',
+    examples: [
+      'I was chuffed to bits when my team finished the project on time.',
+      'She was chuffed to bits with her exam results.'
+    ],
+    tags: ['成功', '获奖', '达成目标'],
+    topicMatch: ['早起经历', '体育赛事', '克服困难', '长久目标']
+  });
+
+  data.push({
+    id: 'e2',
+    category: 'events',
+    phrase: 'gutted',
+    meaning: '极度失望',
+    ipa: '/ˈɡʌtɪd/',
+    source: '英式俚语 (现代)',
+    formality: '非正式口语',
+    synonyms: 'devastated, heartbroken, crushed',
+    examples: [
+      'I was gutted when I had to change my travel plan at the last minute.',
+      'He was gutted not to get the job after the final interview.'
+    ],
+    tags: ['计划失败', '失望', '比赛失利'],
+    topicMatch: ['改变计划', '无聊地方', '未回复信息']
+  });
+
+  data.push({
+    id: 'e3',
+    category: 'events',
+    phrase: 'on the edge of my seat',
+    meaning: '紧张激动 / 十分投入',
+    ipa: '/ɒn ði edʒ əv maɪ siːt/',
+    source: '英剧评论常用',
+    formality: '中性 / 口语',
+    synonyms: 'gripped, captivated, enthralled',
+    examples: [
+      'I was on the edge of my seat during the entire live match.',
+      'The video was so suspenseful that I was on the edge of my seat.'
+    ],
+    tags: ['体育比赛', '视频', '关键时刻'],
+    topicMatch: ['体育赛事', '有趣视频', '重要决定']
+  });
+
+  data.push({
+    id: 'e4',
+    category: 'events',
+    phrase: 'life-changing',
+    meaning: '改变人生的',
+    ipa: '/ˈlaɪf ˌtʃeɪndʒɪŋ/',
+    source: '现代英剧高频',
+    formality: '中性',
+    synonyms: 'transformative, pivotal, world-altering',
+    examples: [
+      'That decision turned out to be life-changing for my career.',
+      'Travelling alone was a life-changing experience.'
+    ],
+    tags: ['重要决定', '长期目标', '旅行'],
+    topicMatch: ['重要决定', '长久目标', '旅行地', '改变想法']
+  });
+
+  data.push({
+    id: 'e5',
+    category: 'events',
+    phrase: 'get the hang of sth',
+    meaning: '掌握窍门 / 学会',
+    ipa: '/ɡet ðə hæŋ əv/',
+    source: '《唐顿庄园》',
+    formality: '非正式口语',
+    synonyms: 'master, pick up, get the knack of',
+    examples: [
+      'It took me a while, but I finally got the hang of using that software.',
+      'She got the hang of gardening quickly and now grows amazing vegetables.'
+    ],
+    tags: ['学习', '技能', '语言', '科技'],
+    topicMatch: ['语言达人', '科技问题', '早起经历', '团队工作']
+  });
+
+  data.push({
+    id: 'e6',
+    category: 'events',
+    phrase: 'get to the bottom of sth',
+    meaning: '弄清真相 / 查明原因',
+    ipa: '/ɡet tə ðə ˈbɒtəm əv/',
+    source: '《唐顿庄园》',
+    formality: '中性 / 正式',
+    synonyms: 'investigate fully, get to the root of, unravel',
+    examples: [
+      'I spent a whole day trying to get to the bottom of the error message.',
+      'We need to get to the bottom of why the plan failed.'
+    ],
+    tags: ['解决难题', '调查', '技术问题'],
+    topicMatch: ['科技问题', '改变计划', '改变想法']
+  });
+
+  data.push({
+    id: 'e7',
+    category: 'events',
+    phrase: 'prove equal to the task',
+    meaning: '胜任某事',
+    ipa: '/pruːv ˈiːkwəl tə ðə tɑːsk/',
+    source: '《唐顿庄园》',
+    formality: '正式',
+    synonyms: 'be up to the job, be capable, measure up',
+    examples: [
+      'Our leader proved equal to the task and guided us through.',
+      'The new policy proved equal to the challenge of reducing pollution.'
+    ],
+    tags: ['团队', '克服困难', '环保', '工作'],
+    topicMatch: ['团队工作', '克服困难', '环保法律', '新法律']
+  });
+
+  data.push({
+    id: 'e8',
+    category: 'events',
+    phrase: 'more than one way to skin a cat',
+    meaning: '办法总比困难多',
+    ipa: '/mɔː ðən wʌn weɪ tə skɪn ə kæt/',
+    source: '《唐顿庄园》',
+    formality: '非正式习语',
+    synonyms: 'there are multiple solutions, many ways to achieve it',
+    examples: [
+      'When my original plan failed, I remembered there’s more than one way to skin a cat.',
+      'Don’t worry – we can find another route. More than one way to skin a cat.'
+    ],
+    tags: ['解决问题', '变通', '计划'],
+    topicMatch: ['改变计划', '科技问题', '新法律']
+  });
+
+  data.push({
+    id: 'e9',
+    category: 'events',
+    phrase: 'get credit for sth',
+    meaning: '因……得到认可 / 功劳',
+    ipa: '/ɡet ˈkredɪt fɔː/',
+    source: '《神探夏洛克》',
+    formality: '中性',
+    synonyms: 'receive recognition, be acknowledged, be praised for',
+    examples: [
+      'He got full credit for turning the business around.',
+      'Employees should get credit for their contributions to innovation.'
+    ],
+    tags: ['成功', '立功', '获奖', '商业'],
+    topicMatch: ['成功商业', '环保法律', '长久目标', '克服困难']
+  });
+
+  data.push({
+    id: 'e10',
+    category: 'events',
+    phrase: 'will wonders never cease?',
+    meaning: '意想不到 (中性偏惊讶)',
+    ipa: '/wɪl ˈwʌndəz ˈnevə siːs/',
+    source: '《唐顿庄园》',
+    formality: '非正式 / 幽默',
+    synonyms: 'how unexpected, that’s surprising',
+    examples: [
+      'Will wonders never cease – I actually enjoyed the documentary!',
+      'He arrived on time? Will wonders never cease!'
+    ],
+    tags: ['意外', '好结果', '改变想法'],
+    topicMatch: ['改变想法', '体育赛事']
+  });
+
+  // ---------- 四、P3 观点 (p3) ----------
+  data.push({
+    id: 'p3_1',
+    category: 'p3',
+    phrase: 'I credit … with … (观点)',
+    meaning: '我认为……具有 (某种品质/能力)',
+    ipa: '/aɪ ˈkredɪt ... wɪð/',
+    source: '《神探夏洛克》',
+    formality: '正式 / 中性',
+    synonyms: 'I attribute to, I acknowledge',
+    examples: [
+      'I credit young people with more creativity than we give them credit for.',
+      'We should credit the government with trying to improve public transport.'
+    ],
+    tags: ['P3观点', '原因', '优缺点', '能力'],
+    topicMatch: ['P3通用']
+  });
+
+  data.push({
+    id: 'p3_2',
+    category: 'p3',
+    phrase: 'level-headed approach',
+    meaning: '冷静的处理方式',
+    ipa: '/ˌlevl ˈhedɪd əˈprəʊtʃ/',
+    source: '英剧高频',
+    formality: '正式 / 中性',
+    synonyms: 'rational method, calm strategy',
+    examples: [
+      'A level-headed approach is vital when making any important decision.',
+      'The school adopted a level-headed approach to the new rules.'
+    ],
+    tags: ['P3观点', '解决方案', '建议'],
+    topicMatch: ['P3通用']
+  });
+
+  data.push({
+    id: 'p3_3',
+    category: 'p3',
+    phrase: 'means the world (P3)',
+    meaning: '表示“对……很重要”',
+    ipa: '/miːnz ðə wɜːld/',
+    source: '英剧高频',
+    formality: '中性',
+    synonyms: 'is vital, is crucial, matters greatly',
+    examples: [
+      'To many residents, green spaces mean the world to their quality of life.',
+      'Good teachers mean the world to students\' development.'
+    ],
+    tags: ['P3观点', '重要性', '社会议题'],
+    topicMatch: ['P3通用']
+  });
+
+  data.push({
+    id: 'p3_4',
+    category: 'p3',
+    phrase: 'prove equal to (P3)',
+    meaning: '能否胜任 / 达到要求',
+    ipa: '/pruːv ˈiːkwəl tuː/',
+    source: '《唐顿庄园》',
+    formality: '正式',
+    synonyms: 'be sufficient, be adequate for',
+    examples: [
+      'Not every policy proves equal to the task it was designed for.',
+      'Will the new system prove equal to the growing demand?'
+    ],
+    tags: ['P3观点', '政府', '学校', '政策'],
+    topicMatch: ['P3通用']
+  });
+
+  data.push({
+    id: 'p3_5',
+    category: 'p3',
+    phrase: 'good Samaritans (P3)',
+    meaning: '善心人士 (社会互助)',
+    ipa: '/ɡʊd səˈmærɪtənz/',
+    source: '英剧典故',
+    formality: '中性 / 书面',
+    synonyms: 'community helpers, philanthropists',
+    examples: [
+      'We rely on good Samaritans to help those in need in our community.',
+      'Good Samaritans often donate to local charities.'
+    ],
+    tags: ['P3观点', '社会互助', '帮助'],
+    topicMatch: ['P3通用']
+  });
+
+  // ---------- 五、话题匹配 (专为P2设计) ----------
+  // 将27个话题作为独立卡片展示，内含推荐短语
+  const topicList = [
+    { topic: '高建筑', rec: ['dressed to the nines', 'gild the lily', 'means the world to sb'] },
+    { topic: '有趣视频', rec: ['on the edge of my seat', 'chuffed to bits', 'life-changing'] },
+    { topic: '无聊地方', rec: ['take the shine off sth', 'gutted', 'not really a people person'] },
+    { topic: '早起经历', rec: ['get the hang of sth', 'prove equal to the task', 'chuffed to bits'] },
+    { topic: '种菜的人', rec: ['good Samaritans', 'level-headed', 'credit sb with sth'] },
+    { topic: '新法律', rec: ['prove equal to the task', 'get credit for sth', 'more than one way to skin a cat'] },
+    { topic: '发小', rec: ['take a shine to sb', 'bear a striking resemblance to', 'means the world to sb'] },
+    { topic: '医疗行业的人', rec: ['level-headed', 'credit sb with sth', 'good Samaritans'] },
+    { topic: '成功商业的人', rec: ['level-headed', 'get credit for sth', 'outranks the Holy Grail'] },
+    { topic: '改变计划', rec: ['gutted', 'chuffed to bits', 'get to the bottom of sth', 'more than one way to skin a cat'] },
+    { topic: '团队工作', rec: ['prove equal to the task', 'get the hang of sth', 'level-headed'] },
+    { topic: '重要决定', rec: ['life-changing', 'on the edge of my seat', 'get credit for sth'] },
+    { topic: '体育赛事', rec: ['on the edge of my seat', 'chuffed to bits', 'will wonders never cease?'] },
+    { topic: '特别食物', rec: ['means the world to sb', 'outranks the Holy Grail'] },
+    { topic: '语言达人', rec: ['get the hang of sth', 'credit sb with sth'] },
+    { topic: '科技问题', rec: ['get to the bottom of sth', 'prove equal to the task', 'more than one way to skin a cat'] },
+    { topic: '名人广告', rec: ['dressed to the nines', 'gild the lily'] },
+    { topic: '旅行地', rec: ['life-changing', 'chuffed to bits', 'on the edge of my seat'] },
+    { topic: '拜访的家', rec: ['gild the lily', 'take the shine off sth'] },
+    { topic: '动物故事', rec: ['good Samaritans', 'means the world to sb'] },
+    { topic: '别人帮助', rec: ['good Samaritans', 'credit sb with sth'] },
+    { topic: '环保法律', rec: ['get credit for sth', 'prove equal to the task'] },
+    { topic: '未回复信息', rec: ['gutted', 'take the shine off sth'] },
+    { topic: '长久目标', rec: ['life-changing', 'means the world to sb', 'get credit for sth'] },
+    { topic: '克服困难的人', rec: ['prove equal to the task', 'chuffed to bits', 'get credit for sth'] },
+    { topic: '改变想法', rec: ['get to the bottom of sth', 'life-changing', 'will wonders never cease?'] },
+    { topic: '环境法律 (第二道)', rec: ['get credit for sth', 'prove equal to the task'] }
+  ];
+
+  // 把 topicList 转换为卡片数据
+  topicList.forEach((item, index) => {
+    data.push({
+      id: `topic_${index}`,
+      category: 'topics',
+      phrase: `📌 ${item.topic}`,
+      meaning: '推荐使用短语',
+      ipa: '',
+      source: '雅思P2话题匹配',
+      formality: '',
+      synonyms: '',
+      examples: [],
+      tags: [],
+      topicMatch: [],
+      isTopicCard: true,
+      recPhrases: item.rec
+    });
+  });
+
+  // =====================================================================
+  // 2. 渲染逻辑
+  // =====================================================================
+  const container = document.getElementById('masonryContainer');
+  const filterBtns = document.querySelectorAll('.filter-btn');
+
+  function renderCards(filter = 'all') {
+    let filtered = data;
+    if (filter !== 'all') {
+      filtered = data.filter(item => item.category === filter);
+    }
+
+    if (filtered.length === 0) {
+      container.innerHTML = `<div class="no-result"><i class="fas fa-search" style="font-size:2rem;display:block;margin-bottom:12px;"></i>没有找到该分类下的卡片，试试其他筛选吧</div>`;
+      return;
+    }
+
+    let html = '';
+    filtered.forEach(item => {
+      const isTopic = item.isTopicCard || false;
+      const cardClass = isTopic ? 'card topic-match-card' : 'card';
+
+      // 构造示例html
+      let examplesHtml = '';
+      if (item.examples && item.examples.length) {
+        examplesHtml = `<div class="detail-block"><div class="label"><i class="fas fa-quote-right"></i> 雅思例句</div>`;
+        item.examples.forEach(ex => {
+          examplesHtml += `<div class="example-item">“${ex}”</div>`;
+        });
+        examplesHtml += `</div>`;
+      }
+
+      // 构造推荐短语（话题卡片专用）
+      let recHtml = '';
+      if (isTopic && item.recPhrases) {
+        recHtml = `<div class="detail-block"><div class="label"><i class="fas fa-lightbulb"></i> 推荐短语</div><div class="rec-list">`;
+        item.recPhrases.forEach(p => {
+          recHtml += `<span class="rec-item">${p}</span>`;
+        });
+        recHtml += `</div></div>`;
+      }
+
+      // 标签（非话题卡片）
+      let tagsHtml = '';
+      if (!isTopic && item.tags && item.tags.length) {
+        tagsHtml = `<div class="detail-block"><div class="label"><i class="fas fa-tags"></i> 适用标签</div><div class="tags-wrap">`;
+        item.tags.forEach(t => {
+          tagsHtml += `<span class="topic-tag">${t}</span>`;
+        });
+        tagsHtml += `</div></div>`;
+      }
+
+      // 话题匹配（非话题卡片）
+      let matchHtml = '';
+      if (!isTopic && item.topicMatch && item.topicMatch.length) {
+        matchHtml = `<div class="detail-block"><div class="label"><i class="fas fa-bullseye"></i> P2话题匹配</div><div class="tags-wrap">`;
+        item.topicMatch.forEach(t => {
+          matchHtml += `<span class="topic-tag">${t}</span>`;
+        });
+        matchHtml += `</div></div>`;
+      }
+
+      // 额外信息：音标、来源、同义词
+      let metaHtml = '';
+      if (!isTopic) {
+        metaHtml = `
+          <div class="detail-block" style="display:flex;flex-wrap:wrap;gap:8px 18px;background:#f8f6f2;padding:8px 14px;border-radius:14px;margin-bottom:14px;">
+            ${item.ipa ? `<span><i class="fas fa-microphone"></i> ${item.ipa}</span>` : ''}
+            ${item.source ? `<span><i class="fas fa-film"></i> ${item.source}</span>` : ''}
+            ${item.formality ? `<span><i class="fas fa-comment"></i> ${item.formality}</span>` : ''}
+            ${item.synonyms ? `<span><i class="fas fa-exchange-alt"></i> ${item.synonyms}</span>` : ''}
+          </div>
+        `;
+      }
+
+      // 展开内容
+      const bodyContent = isTopic ? `
+        ${recHtml}
+      ` : `
+        ${metaHtml}
+        ${examplesHtml}
+        ${tagsHtml}
+        ${matchHtml}
+      `;
+
+      html += `
+        <div class="${cardClass}" data-id="${item.id}">
+          <div class="card-header" onclick="toggleCard('${item.id}')">
+            <div>
+              <div class="phrase"><i class="fas fa-chevron-right"></i> ${item.phrase}</div>
+              <div class="meaning">${item.meaning}</div>
+            </div>
+            <div style="display:flex;align-items:center;gap:6px;">
+              <span class="cat-tag">${item.category === 'people' ? '人物' : item.category === 'places' ? '地点/物品' : item.category === 'events' ? '事件/感受' : item.category === 'p3' ? 'P3观点' : '话题匹配'}</span>
+              <i class="fas fa-chevron-down card-expand-icon" id="icon_${item.id}"></i>
+            </div>
+          </div>
+          <div class="card-body" id="body_${item.id}">
+            ${bodyContent}
+          </div>
+        </div>
+      `;
+    });
+
+    container.innerHTML = html;
+  }
+
+  // =====================================================================
+  // 3. 展开/折叠 与 筛选
+  // =====================================================================
+  window.toggleCard = function(id) {
+    const body = document.getElementById(`body_${id}`);
+    const icon = document.getElementById(`icon_${id}`);
+    if (!body) return;
+    const isOpen = body.classList.contains('open');
+    if (isOpen) {
+      body.classList.remove('open');
+      if (icon) icon.style.transform = 'rotate(0deg)';
+    } else {
+      body.classList.add('open');
+      if (icon) icon.style.transform = 'rotate(180deg)';
+    }
+  };
+
+  // 筛选事件
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      const filter = this.dataset.filter;
+      renderCards(filter);
+      // 滚动到顶部
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+
+  // =====================================================================
+  // 4. 初始化
+  // =====================================================================
+  renderCards('all');
+</script>
+
+</body>
+</html>
